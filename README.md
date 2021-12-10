@@ -32,11 +32,14 @@ Roast will provide the user base with a full CRUD browser application. The app w
 |      React       | jsx based client framework|
 | React-Router-Dom | handles dom rendering and manipulation in React |
 |      Axios       | provides client CRUD capabilites with back-end|
-|   Ruby on Rails  | Ruby based back-end framework |
+|    PostgreSQL    | object-relatioinal database system |
+|  Ruby on Rails   | Ruby based back-end framework |
 |   Rack-CORS      | Ruby on Rails Cross-Origin Resource Sharing |
 |     Bcrypt       | Ruby on Rails encryption gem library |
 |      jwt         | Ruby on Rails json web token gem library |
 |  awesome print   | ruby console return-text management |
+|     faker        | ruby random data gem library |
+
 
 
 
