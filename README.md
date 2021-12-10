@@ -84,7 +84,7 @@ src
       |__ Timer.jsx
       |__ EditCar.jsx
 |__ screens/
-      |__ IndexLogin.jsx
+      |__ HomeLogin.jsx
       |__ SignUp.jsx
       |__ List.jsx
       |__ Detail.jsx
