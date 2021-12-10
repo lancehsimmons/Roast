@@ -80,7 +80,7 @@ Roast will provide the user base with a full CRUD browser application. The app w
 
 
 
-[Roast Component Tree](https://www.figma.com/file/maXGZBUBNJucVqfARAVQJm/Roast-Component-Tree?node-id=0%3A1)
+![Roast Component Tree](https://user-images.githubusercontent.com/90333715/145506711-106a1b82-9bec-47f7-9cad-64fbf01f7875.png)
 
 #### Component Architecture
 
