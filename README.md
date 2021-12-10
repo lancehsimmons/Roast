@@ -106,11 +106,22 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Rails setup   |    H     |     1 hrs      |      hrs     |     hrs     |
+| scaffolding   |    H     |     1 hrs      |      hrs     |     TBD     |
+| associations  |    H     |     1 hrs      |      hrs     |     TBD     |
+| controllers/routes |  H  |     4 hrs      |      hrs     |     TBD     |
+| testing CRUD  |    H     |     3 hrs      |      hrs     |     TBD     |
+| React setup   |    H     |     1 hrs      |      hrs     |     TBD     |
+| file structuring |    H  |     1 hrs      |      hrs     |     TBD     |
+| auth routes   |    L     |     3 hrs      |      hrs     |     TBD     |
+| CRUD routes   |    H     |     3 hrs      |      hrs     |     TBD     |
+| testing routes |    H    |     3 hrs      |      hrs     |     TBD     |
+| basic layout  |    H     |     4 hrs      |      hrs     |     TBD     |  
+| organizing logic | H     |     2 hrs      |      hrs     |     TBD     |  
+| basic css     |    H     |     5 hrs      |      hrs     |     TBD     |
+| refining css  |    H     |     4 hrs      |      hrs     |     TBD     |
+| TOTAL         |    H     |     36 hrs     |      hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
