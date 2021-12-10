@@ -53,7 +53,7 @@ Roast will provide the user base with a full CRUD browser application. The app w
 
 #### Component Tree
 
-![Roast Component Tree](https://user-images.githubusercontent.com/90333715/145506711-106a1b82-9bec-47f7-9cad-64fbf01f7875.png)
+
 
 #### Component Architecture
 
@@ -136,7 +136,7 @@ src
 
 ## Post-MVP
 
-- User Authentication
+- User Authentication and Authorization
 - Timer for Create/Add Roast screen
 
 ***
