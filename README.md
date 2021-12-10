@@ -1,6 +1,6 @@
 ## Roast
 
-A full-stack home coffee roasting log app. Built with Ruby on Rails and React.
+A full-stack home coffee roasting journal. Built with Ruby on Rails and React.
 
 Roast aims to provide a dynamic, precise, and robust log for home coffee roasting. Perfecting roasts on your favorite beans is a laborious process. I've created Roast to give home-roasters the tools they need to achieve the ideal bean.
 
