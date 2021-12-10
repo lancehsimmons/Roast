@@ -58,12 +58,12 @@ Roast will provide the user base with a full CRUD browser application. The app w
 #### Component Architecture
 
 ``` structure
-
+|__public
+      |__ images
 src
 |__ Index.jsx
 |__ assets/
       |__ fonts
-      |__ images
       |__ css
           |__ layout.css
           |__ indexLogin.css
