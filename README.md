@@ -13,7 +13,7 @@ Roast will provide the user base with a full CRUD browser application. The app w
 ### Goals
 
 - Functioning RESTful API with CRUD built with Ruby on Rails
-  - Postgresql database
+  - PostgreSQL database
     - user table
     - roast table
 - Full CRUD client built with React
@@ -23,7 +23,7 @@ Roast will provide the user base with a full CRUD browser application. The app w
   - view all roasts
   - update roasts
   - delete roasts
-- CSS styled to match wireframes
+- Client CSS styled to match wireframes
 
 ### Libraries and Dependencies
 
@@ -39,10 +39,6 @@ Roast will provide the user base with a full CRUD browser application. The app w
 |      jwt         | Ruby on Rails json web token gem library |
 |  awesome print   | ruby console return-text management |
 |     faker        | ruby random data gem library |
-
-
-
-
 
 <br>
 
