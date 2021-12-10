@@ -21,26 +21,17 @@
 
 <br>
 
-## Overview
+## Roast
 
-**Roast** 
 A full-stack home coffee roasting log app. Built with Ruby on Rails and React.
 
 Roast aims to provide a dynamic, precise, and robust log for home coffee roasting. Perfecting roasts on your favorite beans is a laborious process. I've created Roast to give home-roasters the tools they need to achieve the ideal bean.
 
 
-
-<br>
-
 ## MVP
-
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
 Roast will provide the user base with a full CRUD browser application. The app will allow users to create an account, add new roasts, view their roasting journal, as well as update and delete logs from the journal.
 
-
-
-<br>
 
 ### Goals
 
@@ -56,7 +47,7 @@ Roast will provide the user base with a full CRUD browser application. The app w
   - update roasts
   - delete roasts
 
-<br>
+
 
 ### Libraries and Dependencies
 
@@ -83,15 +74,13 @@ Roast will provide the user base with a full CRUD browser application. The app w
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
 ![Roast Wireframe built on Figma](https://www.figma.com/file/omQOSDP7DrWljFGpiiJdsN/Roast?node-id=0%3A1)
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+
+[Roast Component Tree](https://www.figma.com/file/maXGZBUBNJucVqfARAVQJm/Roast-Component-Tree?node-id=0%3A1)
 
 #### Component Architecture
 
