@@ -1,26 +1,3 @@
-
-
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
-
-- [Overview](#overview)
-- [MVP](#mvp)
-  - [Goals](#goals)
-  - [Libraries and Dependencies](#libraries-and-dependencies)
-  - [Client (Front End)](#client-front-end)
-    - [Wireframes](#wireframes)
-    - [Component Tree](#component-tree)
-    - [Component Architecture](#component-architecture)
-    - [Time Estimates](#time-estimates)
-  - [Server (Back End)](#server-back-end)
-    - [ERD Model](#erd-model)
-- [Post-MVP](#post-mvp)
-- [Code Showcase](#code-showcase)
-- [Code Issues & Resolutions](#code-issues--resolutions)
-
-<br>
-
 ## Roast
 
 A full-stack home coffee roasting log app. Built with Ruby on Rails and React.
@@ -46,12 +23,9 @@ Roast will provide the user base with a full CRUD browser application. The app w
   - view all roasts
   - update roasts
   - delete roasts
-
-
+- CSS styled to match wireframes
 
 ### Libraries and Dependencies
-
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
@@ -63,7 +37,7 @@ Roast will provide the user base with a full CRUD browser application. The app w
 |   Rack-CORS      | Ruby on Rails Cross-Origin Resource Sharing |
 |     Bcrypt       | Ruby on Rails encryption gem library |
 |      jwt         | Ruby on Rails json web token gem library |
-|  awesome print   | ruby console return text management |
+|  awesome print   | ruby console return-text management |
 
 
 
@@ -131,8 +105,6 @@ src
       
       
 #### Time Estimates
-
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
