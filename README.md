@@ -30,7 +30,6 @@ Roast will provide the user base with a full CRUD browser application. The app w
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | jsx based client framework|
-|   React Router   | enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. |
 | React-Router-Dom | handles dom rendering and manipulation in React |
 |      Axios       | provides client CRUD capabilites with back-end|
 |   Ruby on Rails  | Ruby based back-end framework |
