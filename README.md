@@ -109,7 +109,7 @@ src
 | Rails setup   |    H     |     1 hrs      |      hrs     |     hrs     |
 | scaffolding   |    H     |     1 hrs      |      hrs     |     TBD     |
 | associations  |    H     |     1 hrs      |      hrs     |     TBD     |
-| controllers/routes |  H  |     4 hrs      |      hrs     |     TBD     |
+| controllers/routes |  H  |     5 hrs      |      hrs     |     TBD     |
 | testing CRUD  |    H     |     3 hrs      |      hrs     |     TBD     |
 | React setup   |    H     |     1 hrs      |      hrs     |     TBD     |
 | file structuring |    H  |     1 hrs      |      hrs     |     TBD     |
@@ -120,7 +120,7 @@ src
 | organizing logic | H     |     2 hrs      |      hrs     |     TBD     |  
 | basic css     |    H     |     5 hrs      |      hrs     |     TBD     |
 | refining css  |    H     |     4 hrs      |      hrs     |     TBD     |
-| TOTAL         |    H     |     38 hrs     |      hrs     |     TBD     |
+| TOTAL         |    H     |     39 hrs     |      hrs     |     TBD     |
 
 
 <br>
