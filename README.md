@@ -45,13 +45,16 @@ Roast will provide the user base with a full CRUD browser application. The app w
 ### Goals
 
 - Functioning RESTful API with CRUD built with Ruby on Rails
-  - Interacting with postgresql database
+  - Postgresql database
     - user table
     - roast table
 - Full CRUD client built with React
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Users can create an account
+- Users can interact with their roast journal
+  - create new roasts
+  - view all roasts
+  - update roasts
+  - delete roasts
 
 <br>
 
@@ -61,11 +64,18 @@ Roast will provide the user base with a full CRUD browser application. The app w
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-|      Axios       | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | jsx based client framework|
+|   React Router   | enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL. |
+| React-Router-Dom | handles dom rendering and manipulation in React |
+|      Axios       | provides client CRUD capabilites with back-end|
+|   Ruby on Rails  | Ruby based back-end framework |
+|   Rack-CORS      | Ruby on Rails Cross-Origin Resource Sharing |
+|     Bcrypt       | Ruby on Rails encryption gem library |
+|      jwt         | Ruby on Rails json web token gem library |
+|  awesome print   | ruby console return text management |
+
+
+
 
 <br>
 
@@ -75,29 +85,7 @@ Roast will provide the user base with a full CRUD browser application. The app w
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
-
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+![Roast Wireframe built on Figma](https://www.figma.com/file/omQOSDP7DrWljFGpiiJdsN/Roast?node-id=0%3A1)
 
 #### Component Tree
 
@@ -112,17 +100,47 @@ Roast will provide the user base with a full CRUD browser application. The app w
 ``` structure
 
 src
+|__ Index.jsx
 |__ assets/
       |__ fonts
-      |__ graphics
       |__ images
-      |__ mockups
+      |__ css
+          |__ layout.css
+          |__ indexLogin.css
+          |__ signup.css
+          |__ list.css
+          |__ detail.css
+          |__ create.css
+          |__ edit.css
+          |__ detail_card.css
+          |__ edit_card.css
 |__ components/
-      |__ Header.jsx
+      |__ App.jsx
+      |__ Layout.jsx
+      |__ MainContainer.jsx
+      |__ CoffeCard.jsx
+      |__ DeleteButton.jsx
+      |__ DetailCard.jsx
+      |__ Timer.jsx
+      |__ EditCar.jsx
+|__ screens/
+      |__ IndexLogin.jsx
+      |__ SignUp.jsx
+      |__ List.jsx
+      |__ Detail.jsx
+      |__ Create.jsx
+      |__ Edit.jsx
 |__ services/
+      |__ ApiConfig.js
+      |__ auth.js
+|__ Containers/
+      |__MainContainer.jsx
+|__ utils/
+      |__ sort.js/
 
-```
 
+      
+      
 #### Time Estimates
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
