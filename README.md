@@ -76,11 +76,10 @@ Roast will provide the user base with a full CRUD browser application. The app w
 
 [Wireframe built on Figma](https://www.figma.com/file/omQOSDP7DrWljFGpiiJdsN/Roast?node-id=0%3A1)
 
+![Roast_home_wireframe](https://user-images.githubusercontent.com/90333715/145507264-c4e6087f-eedf-4780-8462-e99d8861ba25.png)
 
 
 #### Component Tree
-
-
 
 ![Roast Component Tree](https://user-images.githubusercontent.com/90333715/145506711-106a1b82-9bec-47f7-9cad-64fbf01f7875.png)
 
