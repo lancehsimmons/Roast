@@ -1,10 +1,10 @@
 class CoffeesController < ApplicationController
-  before_action :authorize_request, only: :create
+  before_action :authorize_request,  [:index, :create]
   before_ation :set_user_coffee, only: [:index, :show, :update, :destroy]
 
   # GET /coffees
   def index
-    @coffees = Coffee.all
+    @coffees = @current_user.coffees
 
     render json: @coffees
   end
@@ -41,10 +41,6 @@ class CoffeesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_coffee
-      @coffee = Coffee.find(params[:id])
-    end
-
     def set_user_coffee
       @coffee = @current_user.coffees.find(params[:id])
     end
