@@ -1,6 +1,6 @@
 class CoffeesController < ApplicationController
-  before_action :authorize_request, only: [:index, :create, :show, :destroy]
-  before_action :set_user_coffee, only: [:destroy, :show]
+  before_action :authorize_request
+  before_action :set_user_coffee, only: [:destroy, :show, :update]
 
   # GET /coffees
   def index
