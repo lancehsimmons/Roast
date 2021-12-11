@@ -1,13 +1,12 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-export default function SignIn(props) {
+export default function SignIn({handleLogin}) {
   const [formData, setFormData] = useState({
     username: '',
     password: '',
   });
   const { username, password } = formData;
-  const { handleLogin } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
