@@ -26,7 +26,7 @@ puts "#{User.count} users created"
     second_crack: "#{rand(9..11)}:00",
     first_crack_end: "#{rand(7..11)}:00",
     end_drop: "#{rand(9..12)}:00",
-    notes: "fan #{rand(5..7)} at #{rand(3..5)}:00, heat to #{rand(7..9)} at #{rand(7..9)}:00}",
+    notes: "fan #{rand(5..7)} at #{rand(3..5)}:00, heat to #{rand(7..9)} at #{rand(7..9)}:00",
     user: @admin)
 end
 
