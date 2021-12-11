@@ -1,6 +1,6 @@
 class CoffeesController < ApplicationController
-  before_action :authorize_request,  [:index, :create]
-  before_ation :set_user_coffee, only: [:index, :show, :update, :destroy]
+  before_action :authorize_request, only: [:index, :create, :show, :destroy]
+  before_action :set_user_coffee, only: [:destroy, :create, :show]
 
   # GET /coffees
   def index
@@ -17,7 +17,7 @@ class CoffeesController < ApplicationController
   # POST /coffees
   def create
     @coffee = Coffee.new(coffee_params)
-    @coffe.user = @current_user
+    @coffee.user = @current_user
     if @coffee.save
       render json: @coffee, status: :created
     else
@@ -49,4 +49,5 @@ class CoffeesController < ApplicationController
     def coffee_params
       params.require(:coffee).permit(:name, :roast_time, :roast_level, :roaster_settings, :preheat, :yellowing, :browning, :first_crack, :second_crack, :first_crack_end, :end_drop, :notes)
     end
+
 end
