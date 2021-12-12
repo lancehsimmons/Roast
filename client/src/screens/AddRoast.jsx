@@ -65,7 +65,7 @@ export default function AddRoast({handleAddRoast}) {
         <br/>
         <label>
         Roaster Settings:
-        <input type='text' name='roaster settings' value={roaster_settings} onChange={handleChange} />
+        <input type='text' name='roaster_settings' value={roaster_settings} onChange={handleChange} />
         </label>
         <br/>
         <label>
@@ -85,22 +85,22 @@ export default function AddRoast({handleAddRoast}) {
         <br/>
         <label>
         First Crack:
-        <input type='text' name='first crack' value={first_crack} onChange={handleChange} />
+        <input type='text' name='first_crack' value={first_crack} onChange={handleChange} />
         </label>
         <br/>
         <label>
         Second Crack:
-        <input type='text' name='second crack' value={second_crack} onChange={handleChange} />
+        <input type='text' name='second_crack' value={second_crack} onChange={handleChange} />
         </label>
         <br/>
         <label>
         First Crack Ends:
-        <input type='text' name='first crack end' value={first_crack_end} onChange={handleChange} />
+        <input type='text' name='first_crack_end' value={first_crack_end} onChange={handleChange} />
         </label>
         <br/>
         <label>
         End/Drop:
-        <input type='text' name='end/drop' value={end_drop} onChange={handleChange} />
+        <input type='text' name='end_drop' value={end_drop} onChange={handleChange} />
         </label>
         <br/>
         <label>
