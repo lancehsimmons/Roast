@@ -4,7 +4,7 @@ export default function Home({handleLogin}) {
   return (
     <div>
       <h1>Home</h1>
-      <SignIn handleLogin={handleLogin} />
+      {/* <SignIn handleLogin={handleLogin} /> */}
     </div>
   )
 }

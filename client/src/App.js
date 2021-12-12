@@ -1,13 +1,13 @@
 import './App.css';
 
-import { Route, Switch, useHistory } from 'react-router-dom'
+import { Route, Switch, useHistory, Redirect } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import Layout from './components/Layout'
 import Home from './screens/Home'
 import SignUp from './screens/SignUp'
 import SignIn from './components/SignIn'
-import List from './screens/List'
+import MainContainer from './Containers/MainContainer'
 
 import {
   loginUser,
@@ -32,7 +32,7 @@ function App() {
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
     setCurrentUser(userData);
-    history.push('/list');
+    history.push('/');
   };
 
   const handleLogout = () => {
@@ -45,7 +45,7 @@ function App() {
   const handleSignup = async (formData) => {
     const userData = await registerUser(formData);
     setCurrentUser(userData);
-    history.push('/list');
+    history.push('/');
   };
 
   return (
@@ -55,11 +55,12 @@ function App() {
           <Route path='/sign-up'>
             <SignUp handleSignup={handleSignup}/>
           </Route>
-          <Route path='/list'>
-            <List />
-          </Route>
-          <Route path={currentUser ? '/' : '/sign-in'}>
+          <Route path='/sign-in'>
             <SignIn handleLogin={handleLogin}/>
+          </Route>
+          <Route path='/'>
+            {currentUser ? <MainContainer /> :
+          <Redirect to='sign-in' />}
           </Route>
         </Switch>
       </Layout>
