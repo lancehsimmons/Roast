@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function AddRoast({handleAddRoast}) {
+export default function AddRoast({ handleAddRoast }) {
   const [formData, setFormData] = useState({
     name: '',
     roast_time: '',
@@ -43,7 +43,7 @@ export default function AddRoast({handleAddRoast}) {
       <h1>add a roast here</h1>
       <form
       onSubmit={(e) => {
-        e.preventDefault();
+          e.preventDefault();
         handleAddRoast(formData);
       }}
     >

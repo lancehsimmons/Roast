@@ -5,7 +5,7 @@ export const getAllCoffees = async () => {
   return resp.data;
 };
 
-export const postCoffee = async (foodData) => {
+export const postCoffee = async (coffeeData) => {
   const resp = await api.post('/coffees', { coffee: coffeeData });
   return resp.data;
 };
