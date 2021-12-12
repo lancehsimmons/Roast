@@ -1,10 +1,10 @@
 class CoffeesController < ApplicationController
-  before_action :authorize_request
+  before_action :authorize_request, except: :index
   before_action :set_user_coffee, only: [:destroy, :show, :update]
 
   # GET /coffees
   def index
-    @coffees = @current_user.coffees
+    @coffees = Coffee.all
 
     render json: @coffees
   end
