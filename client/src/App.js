@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 import Layout from './components/Layout'
 import Home from './screens/Home'
 import SignUp from './screens/SignUp'
+import SignIn from './components/SignIn'
 import List from './screens/List'
 
 import {
@@ -57,8 +58,8 @@ function App() {
           <Route path='/list'>
             <List />
           </Route>
-          <Route path='/'>
-            <Home handleLogin={handleLogin}/>
+          <Route path={currentUser ? '/' : '/sign-in'}>
+            <SignIn handleLogin={handleLogin}/>
           </Route>
         </Switch>
       </Layout>

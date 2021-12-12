@@ -17,6 +17,7 @@ export default function SignIn({handleLogin}) {
   };
   return (
     <div>
+      <h1>Roast</h1>
     <form onSubmit={(e)=> {
       e.preventDefault();
       handleLogin(formData);
