@@ -34,7 +34,7 @@ export default function MainContainer({ currentUser }) {
         return coffee.id === Number(id) ? newCoffee : coffee;
       })
     );
-    history.push(`/coffees/:${id}/detail`);
+    history.push(`/`);
   };
 
 

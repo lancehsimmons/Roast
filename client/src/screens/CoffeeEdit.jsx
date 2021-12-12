@@ -53,7 +53,7 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
         browning: coffeeItem.browning,
         first_crack: coffeeItem.first_crack,
         second_crack: coffeeItem.second_crack,
-        first_crack_end: coffeeItem.first_crack_ends,
+        first_crack_end: coffeeItem.first_crack_end,
         end_drop: coffeeItem.end_drop,
         notes: coffeeItem.notes 
       });
