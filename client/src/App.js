@@ -44,7 +44,7 @@ function App() {
   const handleSignup = async (formData) => {
     const userData = await registerUser(formData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push('/list');
   };
 
   return (
