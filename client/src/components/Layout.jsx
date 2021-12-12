@@ -6,9 +6,13 @@ export default function Layout({currentUser, handleLogout, children}) {
     <div>
       <Link to='/'>
         <h1>Roast</h1>
-      </Link>
-      <h4>welcome, user</h4>
-      <button onClick={handleLogout}>Logout</button>
+      </Link> 
+      {currentUser &&
+        <>
+          <h4>welcome, {currentUser.username}</h4>
+          <button onClick={handleLogout}>Logout</button>
+        </>}
+
       {children}
     </div>
   )
