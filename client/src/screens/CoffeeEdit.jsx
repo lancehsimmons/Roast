@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
-export default function CoffeeEdit() {
+export default function CoffeeEdit({ handleCoffeeUpdate }) {
   const [formData, setFormData] = useState({
     name: '',
     roast_time: '',
@@ -39,6 +39,14 @@ export default function CoffeeEdit() {
     }));
   };
 
+  useEffect(() => {
+    const prefillFormData = () => {
+      const coffeeItem = coffees.find((coffee) => coffee.id === Number(id));
+      setFormData({ name: coffeeItem.name });
+    };
+    if (coffees.length) prefillFormData();
+  }, [coffees, id]);
+
 
   return (
     <div>
@@ -47,7 +55,7 @@ export default function CoffeeEdit() {
       <form
       onSubmit={(e) => {
           e.preventDefault();
-        handleAddRoast(formData);
+        handleCoffeeUpdate(formData);
       }}
     >
       <h3>Create Food</h3>
