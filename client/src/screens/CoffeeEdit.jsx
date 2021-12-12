@@ -69,7 +69,7 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
       <form
       onSubmit={(e) => {
           e.preventDefault();
-        handleCoffeeUpdate(formData);
+        handleCoffeeUpdate(id, formData);
       }}
     >
 

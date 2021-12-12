@@ -28,6 +28,7 @@ export default function MainContainer({ currentUser }) {
   };
 
   const handleCoffeeUpdate = async (id, formData) => {
+    debugger
     const newCoffee = await putCoffee(id, formData);
     setCoffees((prevState) =>
       prevState.map((coffee) => {
