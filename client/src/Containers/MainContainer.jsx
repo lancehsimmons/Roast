@@ -32,17 +32,21 @@ export default function MainContainer({ currentUser }) {
     <div>
       <h2>main</h2>
       <Switch>
+
       <Route path='/add-roast'>
           <AddRoast
             coffees={coffees}
             handleAddRoast={handleAddRoast} />
         </Route>
-        <Route path='/coffees/:id'>
-          <CoffeeDetail/>
-        </Route>
+
         <Route path='/coffees/:id/edit'>
           <CoffeeEdit/>
         </Route>
+
+        <Route path='/coffees/:id'>
+          <CoffeeDetail/>
+        </Route>
+
         <Route path='/'>
           {/* {currentUser ? <List coffees={coffees}/> : <Redirect to='/sign-in'/>} */}
           <List coffees={coffees}/>
