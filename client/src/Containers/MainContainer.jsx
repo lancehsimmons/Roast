@@ -27,6 +27,16 @@ export default function MainContainer({ currentUser }) {
     history.push('/')
   };
 
+  const handleCoffeeUpdate = async (id, formData) => {
+    const newCoffee = await putCoffee(id, formData);
+    setCoffees((prevState) =>
+      prevState.map((coffee) => {
+        return coffee.id === Number(id) ? newCoffee : coffee;
+      })
+    );
+    history.push(`/coffees/:${id}/detail`);
+  };
+
 
   return (
     <div>
@@ -40,7 +50,7 @@ export default function MainContainer({ currentUser }) {
         </Route>
 
         <Route path='/coffees/:id/edit'>
-          <CoffeeEdit/>
+          <CoffeeEdit handleCoffeeUpdate={handleCoffeeUpdate}/>
         </Route>
 
         <Route path='/coffees/:id'>
