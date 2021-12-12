@@ -18,6 +18,7 @@ import {
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
+  const [isSignedIn, setIsSignedIn] = useState(false)
   const history = useHistory()
 
   useEffect(() => {
@@ -47,6 +48,15 @@ function App() {
     history.push('/');
   };
 
+  useEffect(() => {
+    const checkUser = () => {
+      if (currentUser) {
+        setIsSignedIn(!isSignedIn)
+      }
+    }
+    checkUser()
+  }, [currentUser]);
+
   return (
     <div className="App">
       <Layout handleLogout={handleLogout} currentUser={currentUser}>
@@ -58,8 +68,9 @@ function App() {
             <SignIn handleLogin={handleLogin}/>
           </Route>
           <Route path='/'>
+            
             {currentUser ? <MainContainer /> :
-          <Redirect to='sign-in' />}
+              <Redirect to='sign-in' />}
           </Route>
         </Switch>
       </Layout>
