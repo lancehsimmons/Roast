@@ -11,7 +11,8 @@ import List from './screens/List'
 import {
   loginUser,
   removeToken,
-  verifyUser
+  verifyUser,
+  registerUser
 } from './services/auth'
 
 
@@ -39,12 +40,18 @@ function App() {
     removeToken();
   };
 
+  const handleSignup = async (formData) => {
+    const userData = await registerUser(formData);
+    setCurrentUser(userData);
+    history.push('/');
+  };
+
   return (
     <div className="App">
       <Layout handleLogout={handleLogout} currentUser={currentUser}>
       <Switch>
           <Route path='/sign-up'>
-            <SignUp />
+            <SignUp handleSignup={handleSignup}/>
           </Route>
           <Route path='/list'>
             <List />
