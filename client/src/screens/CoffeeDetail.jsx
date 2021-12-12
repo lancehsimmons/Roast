@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { getOneCoffee } from '../services/coffee';
+import { useParams, Link } from 'react-router-dom'
+
+import { getOneCoffee } from '../services/coffee'
 
 
 export default function CoffeeDetail({ currentUser }) {
@@ -17,7 +18,10 @@ export default function CoffeeDetail({ currentUser }) {
 
   return (
     <div>
-      <p>{coffee.name}</p>
+      <p>{coffee?.name}</p> 
+      <Link to={`/coffees/${coffee?.id}/edit`}>
+        <button>Edit</button>
+      </Link>
     </div>
   )
 }

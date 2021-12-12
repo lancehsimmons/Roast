@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import List from '../screens/List'
 import CoffeeDetail from '../screens/CoffeeDetail'
 import AddRoast from '../screens/AddRoast'
+import CoffeeEdit from '../screens/CoffeeEdit'
 
 import {getAllCoffees, postCoffee} from '../services/coffee'
 
@@ -38,6 +39,9 @@ export default function MainContainer({ currentUser }) {
         </Route>
         <Route path='/coffees/:id'>
           <CoffeeDetail/>
+        </Route>
+        <Route path='/coffees/:id/edit'>
+          <CoffeeEdit/>
         </Route>
         <Route path='/'>
           {/* {currentUser ? <List coffees={coffees}/> : <Redirect to='/sign-in'/>} */}
