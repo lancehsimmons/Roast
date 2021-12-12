@@ -1,11 +1,11 @@
-import { Route, Switch, useHistory, Redirect } from 'react-router-dom'
+import { Route, Switch, useHistory } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import List from '../screens/List'
 import CoffeeDetail from '../screens/CoffeeDetail'
 import AddRoast from '../screens/AddRoast'
 import CoffeeEdit from '../screens/CoffeeEdit'
 
-import {getAllCoffees, postCoffee, putCoffee} from '../services/coffee'
+import {getAllCoffees, postCoffee, putCoffee, deleteCoffee} from '../services/coffee'
 
 
 export default function MainContainer({ currentUser }) {
@@ -28,7 +28,6 @@ export default function MainContainer({ currentUser }) {
   };
 
   const handleCoffeeUpdate = async (id, formData) => {
-    debugger
     const newCoffee = await putCoffee(id, formData);
     setCoffees((prevState) =>
       prevState.map((coffee) => {
@@ -36,6 +35,11 @@ export default function MainContainer({ currentUser }) {
       })
     );
     history.push(`/`);
+  };
+
+  const handleCoffeeDelete = async (id) => {
+    await deleteCoffee(id);
+    setCoffees((prevState) => prevState.filter((coffee) => coffee.id !== id));
   };
 
 
@@ -58,9 +62,9 @@ export default function MainContainer({ currentUser }) {
           <CoffeeDetail/>
         </Route>
 
-        <Route path='/'>
+        <Route path='/' >
           {/* {currentUser ? <List coffees={coffees}/> : <Redirect to='/sign-in'/>} */}
-          <List coffees={coffees}/>
+          <List coffees={coffees} handleCoffeeDelete={handleCoffeeDelete}/>
         </Route>
       </Switch>
     </div>

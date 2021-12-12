@@ -19,3 +19,7 @@ export const putCoffee= async (id, coffeeData) => {
   const resp = await api.put(`/coffees/${id}`, { coffee: coffeeData });
   return resp.data;
 };
+
+export const deleteCoffee = async (id) => {
+  await api.delete(`/coffees/${id}`);
+};

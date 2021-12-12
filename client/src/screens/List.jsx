@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function List({coffees}) {
+export default function List({ coffees, handleCoffeeDelete}) {
   return (
     <div>
       {coffees.map((coffee) =>
@@ -9,9 +9,13 @@ export default function List({coffees}) {
           <Link to={`/coffees/${coffee.id}`}>
             <p>{coffee.name}</p>
           </Link>
+          {coffee.id}
+          <button onClick={() => handleCoffeeDelete(coffee.id)}>
+            Delete
+          </button>
         </div>
       )}
-           <Link to='/add-roast'>
+      <Link to='/add-roast'>
         <button>Add Roast</button>
       </Link>
     </div>
