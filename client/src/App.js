@@ -50,17 +50,18 @@ function App() {
   return (
     <div className="App">
       <Layout handleLogout={handleLogout} currentUser={currentUser}>
-      <Switch>
+        <Switch>
           <Route path='/sign-up'>
-            <SignUp handleSignup={handleSignup}/>
+            <SignUp handleSignup={handleSignup} />
           </Route>
           <Route path='/sign-in'>
-             <SignIn handleLogin={handleLogin}/>
+            <SignIn handleLogin={handleLogin} />
           </Route>
           <Route path='/'>
-            {currentUser ? <MainContainer/> : <Redirect to='/sign-in'/>}
+            {/* {currentUser ? <MainContainer/> : <Redirect to='/sign-in'/>} */}
+            <MainContainer />
           </Route>
-      </Switch>
+        </Switch>
       </Layout>
     </div>
   );

@@ -1,4 +1,4 @@
-import { Route, Switch, useHistory } from 'react-router-dom'
+import { Route, Switch, useHistory, Redirect } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import List from '../screens/List'
 import AddRoast from '../screens/AddRoast'
@@ -36,7 +36,9 @@ export default function MainContainer({ currentUser }) {
             handleAddroast={handleAddRoast} />
         </Route>
         <Route path='/'>
-          <MainContainer/>
+          {currentUser ? <List coffees={coffees}/> : <Redirect to='/sign-in'/>}
+
+          {/* <List coffees={coffees}/> */}
         </Route>
       </Switch>
     </div>
