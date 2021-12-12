@@ -6,7 +6,7 @@ import AddRoast from '../screens/AddRoast'
 import {getAllCoffees} from '../services/coffee'
 
 
-export default function MainContainer() {
+export default function MainContainer({ currentUser }) {
   const [coffees, setCoffees] = useState([])
 
   useEffect(() => {
@@ -17,15 +17,24 @@ export default function MainContainer() {
     fetchCoffees();
   }, []);
 
+  const handleAddRoast = async (formData) => {
+    const newCoffee = await postCoffee(formData);
+    setFoods((prevState) => [...prevState, newCoffee);
+    history.push('/');
+  };
+
+
   return (
     <div>
       <h2>main</h2>
       <Switch>
       <Route path='/add-roast'>
-          <AddRoast coffees={coffees}/>
+          <AddRoast
+            coffees={coffees}
+            handleAddroast={handleAddRoast} />
         </Route>
         <Route path='/'>
-          <List coffees={coffees}/>
+          <MainContainer/>
         </Route>
       </Switch>
     </div>
