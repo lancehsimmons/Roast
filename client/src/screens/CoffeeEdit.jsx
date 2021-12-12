@@ -43,7 +43,20 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
   useEffect(() => {
     const prefillFormData = () => {
       const coffeeItem = coffees.find((coffee) => coffee.id === Number(id));
-      setFormData({ name: coffeeItem.name });
+      setFormData({
+        name: coffeeItem.name,
+        roast_time: coffeeItem.roast_time,
+        roast_level: coffeeItem.roast_level,
+        roaster_settings: coffeeItem.roaster_settings,
+        preheat: coffeeItem.preheat,
+        yellowing: coffeeItem.yellowing,
+        browning: coffeeItem.browning,
+        first_crack: coffeeItem.first_crack,
+        second_crack: coffeeItem.second_crack,
+        first_crack_end: coffeeItem.first_crack_ends,
+        end_drop: coffeeItem.end_drop,
+        notes: coffeeItem.notes 
+      });
     };
     if (coffees.length) prefillFormData();
   }, [coffees, id]);
