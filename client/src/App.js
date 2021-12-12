@@ -4,7 +4,6 @@ import { Route, Switch, useHistory, Redirect } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import Layout from './components/Layout'
-import Home from './screens/Home'
 import SignUp from './screens/SignUp'
 import SignIn from './components/SignIn'
 import MainContainer from './Containers/MainContainer'
