@@ -37,12 +37,12 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
-    }));
-  };
+    }))
+  }
 
   useEffect(() => {
     const prefillFormData = () => {
-      const coffeeItem = coffees.find((coffee) => coffee.id === Number(id));
+      const coffeeItem = coffees.find((coffee) => coffee.id === Number(id))
       setFormData({
         name: coffeeItem.name,
         roast_time: coffeeItem.roast_time,
@@ -56,10 +56,10 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
         first_crack_end: coffeeItem.first_crack_end,
         end_drop: coffeeItem.end_drop,
         notes: coffeeItem.notes 
-      });
-    };
+      })
+    }
     if (coffees.length) prefillFormData();
-  }, [coffees, id]);
+  }, [coffees, id])
 
 
   return (
@@ -68,8 +68,8 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
       <h1>add a roast here</h1>
       <form
       onSubmit={(e) => {
-          e.preventDefault();
-        handleCoffeeUpdate(id, formData);
+          e.preventDefault()
+        handleCoffeeUpdate(id, formData)
       }}
     >
 

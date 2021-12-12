@@ -10,7 +10,7 @@ import {getAllCoffees, postCoffee, putCoffee, deleteCoffee} from '../services/co
 
 export default function MainContainer({ currentUser }) {
   const [coffees, setCoffees] = useState([])
-  const history = useHistory();
+  const history = useHistory()
 
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function MainContainer({ currentUser }) {
       const coffeeList = await getAllCoffees()
       setCoffees(coffeeList)
     };
-    fetchCoffees();
+    fetchCoffees()
   }, []);
 
   const handleAddRoast = async (formData) => {
@@ -28,18 +28,18 @@ export default function MainContainer({ currentUser }) {
   };
 
   const handleCoffeeUpdate = async (id, formData) => {
-    const newCoffee = await putCoffee(id, formData);
+    const newCoffee = await putCoffee(id, formData)
     setCoffees((prevState) =>
       prevState.map((coffee) => {
         return coffee.id === Number(id) ? newCoffee : coffee;
       })
-    );
-    history.push(`/`);
-  };
+    )
+    history.push(`/`)
+  }
 
   const handleCoffeeDelete = async (id) => {
     await deleteCoffee(id);
-    setCoffees((prevState) => prevState.filter((coffee) => coffee.id !== id));
+    setCoffees((prevState) => prevState.filter((coffee) => coffee.id !== id))
   };
 
 

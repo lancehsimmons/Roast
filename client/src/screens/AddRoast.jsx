@@ -31,20 +31,20 @@ export default function AddRoast({ handleAddRoast }) {
   } = formData;
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
-    }));
-  };
+    }))
+  }
 
   return (
     <div>
       <h1>add a roast here</h1>
       <form
       onSubmit={(e) => {
-          e.preventDefault();
-        handleAddRoast(formData);
+          e.preventDefault()
+        handleAddRoast(formData)
       }}
     >
       <h3>Create Food</h3>
