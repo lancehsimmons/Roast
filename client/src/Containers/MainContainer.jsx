@@ -5,7 +5,7 @@ import CoffeeDetail from '../screens/CoffeeDetail'
 import AddRoast from '../screens/AddRoast'
 import CoffeeEdit from '../screens/CoffeeEdit'
 
-import {getAllCoffees, postCoffee} from '../services/coffee'
+import {getAllCoffees, postCoffee, putCoffee} from '../services/coffee'
 
 
 export default function MainContainer({ currentUser }) {
@@ -50,7 +50,7 @@ export default function MainContainer({ currentUser }) {
         </Route>
 
         <Route path='/coffees/:id/edit'>
-          <CoffeeEdit handleCoffeeUpdate={handleCoffeeUpdate}/>
+          <CoffeeEdit coffees={coffees} handleCoffeeUpdate={handleCoffeeUpdate}/>
         </Route>
 
         <Route path='/coffees/:id'>

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
-export default function CoffeeEdit({ handleCoffeeUpdate }) {
+export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
+  const { id } = useParams();
   const [formData, setFormData] = useState({
     name: '',
     roast_time: '',
@@ -58,7 +59,7 @@ export default function CoffeeEdit({ handleCoffeeUpdate }) {
         handleCoffeeUpdate(formData);
       }}
     >
-      <h3>Create Food</h3>
+
       <label>
         Name:
         <input type='text' name='name' value={name} onChange={handleChange} />
