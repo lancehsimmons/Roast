@@ -3,11 +3,13 @@ import { useEffect, useState } from 'react';
 import List from '../screens/List'
 import AddRoast from '../screens/AddRoast'
 
-import {getAllCoffees} from '../services/coffee'
+import {getAllCoffees, postCoffee} from '../services/coffee'
 
 
 export default function MainContainer({ currentUser }) {
   const [coffees, setCoffees] = useState([])
+  const history = useHistory();
+
 
   useEffect(() => {
     const fetchCoffees = async () => {
@@ -19,7 +21,7 @@ export default function MainContainer({ currentUser }) {
 
   const handleAddRoast = async (formData) => {
     const newCoffee = await postCoffee(formData);
-    setFoods((prevState) => [...prevState, newCoffee);
+    setCoffees((prevState) => [...prevState, newCoffee]);
     history.push('/');
   };
 
