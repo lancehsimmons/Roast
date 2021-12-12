@@ -17,7 +17,7 @@ export default function SignIn({handleLogin}) {
   };
   return (
     <div>
-          <form onSubmit={(e)=> {
+    <form onSubmit={(e)=> {
       e.preventDefault();
       handleLogin(formData);
     }}>
@@ -42,7 +42,7 @@ export default function SignIn({handleLogin}) {
         />
       </label>
       <br />
-      <Link to='/register'>Register</Link>
+      <Link to='/sign-up'>Sign Up</Link>
       <button>Submit</button>
     </form>
     </div>
