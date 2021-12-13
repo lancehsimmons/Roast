@@ -26,10 +26,16 @@ input {
   background-color: #FFF1E2;
   border: none;
   border-radius: 3px;
-  align-self: middle;
-  display: block;
+  display: inline-block;
 }
 
-input, label {
-  display: inline-block;
+/* input, label {
+  display: block;
+} */
+
+button {
+  background-color: #844A23;
+  border: none;
+  border-radius: 4px;
+  color: #FFF1E2;
 }
