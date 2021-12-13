@@ -19,8 +19,8 @@ export default function MainContainer({ currentUser, setCurrentUser }) {
       const coffeeList = await getAllCoffees()
       setCoffees(coffeeList)
     };
-    fetchCoffees()
-  }, []);
+    if (currentUser) fetchCoffees()
+  }, [currentUser]);
 
   const handleAddRoast = async (formData) => {
     const newCoffee = await postCoffee(formData)
