@@ -1,11 +1,9 @@
-import { Route, Switch, useHistory, Redirect } from 'react-router-dom'
+import { Route, Switch, useHistory } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import List from '../screens/List'
-import SignIn from '../components/SignIn'
 import CoffeeDetail from '../screens/CoffeeDetail'
 import AddRoast from '../screens/AddRoast'
 import CoffeeEdit from '../screens/CoffeeEdit'
-import { verifyUser, loginUser } from '../services/auth'
 import { getAllCoffees, postCoffee, putCoffee, deleteCoffee } from '../services/coffee'
 
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink, Link, useLocation } from 'react-router-dom'
+import '../assets/layout.css'
 
 
 
@@ -13,7 +14,7 @@ export default function Layout({ currentUser, handleLogout, children }) {
       {currentUser &&
         <>
           <nav>
-            <h4>welcome, {currentUser.username}</h4>
+            <h4 className='welcome'>welcome, {currentUser.username}</h4>
             <div onClick={handleLogout}>Logout</div>
             <NavLink to='/'>
               <div>Home</div>

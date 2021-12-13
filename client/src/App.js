@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 
 import Layout from './components/Layout'
 import SignUp from './screens/SignUp'
-import SignIn from './components/SignIn'
+import SignIn from './screens/SignIn'
 import MainContainer from './Containers/MainContainer'
 
 import {
@@ -23,7 +23,6 @@ function App() {
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser();
-      debugger
       setCurrentUser(userData);
     };
     handleVerify();
