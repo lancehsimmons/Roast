@@ -32,37 +32,46 @@ export default function SignIn({ handleSignIn }) {
         e.preventDefault();
         handleSignIn(formData);
       }}>
-        <h5>SIGN IN</h5>
-        <div className='input-div'>
-          <span>
-            username
-          </span><br/>
-          <input
-              type='text'
-              name='username'
-              value={username}
-              onChange={handleChange}
-          />
-          
-          <br />
-          <span>
-            password
-          </span><br/>
-            <input
-              type='password'
-              name='password'
-              value={password}
-              onChange={handleChange}
-            />
-          <br />
-          <button>SUBMIT</button>
-            <div className='signup-div'>
-          <Link to='/sign-up'>
-            <button>SIGN UP</button>
-          </Link>
+        <div className='sign-in-label-flex-contain'>
+          <div className='sign-in-label-div'>
+            <div className='sign-in-text-div'>
+            <h5>SIGN IN</h5>
             </div>
+          </div>
+        </div>
+
+        <div className='input-div'>
+          <span className='slable'>
+            username
+          </span><br />
+          <input
+            type='text'
+            name='username'
+            value={username}
+            onChange={handleChange}
+          />
+
+          <br />
+          <span className='slable'>
+            password
+          </span><br />
+          <input
+            type='password'
+            name='password'
+            value={password}
+            onChange={handleChange}
+          />
+          <br />
+          <div className='submit-button-div'>
+            <button>SUBMIT</button>
+          </div>
         </div>
       </form>
+      <div className='signup-div'>
+        <Link to='/sign-up'>
+          <button>SIGN UP</button>
+        </Link>
+      </div>
     </div>
   )
 }

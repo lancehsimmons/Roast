@@ -17,8 +17,26 @@
   padding: 10px 0px 10px 0px;
 }
 
+
+.sign-in-label-flex-contain {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-label-div {
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sign-in-text-div {
+  display: flex;
+  justify-content: flex-start
+}
+
 h5 {
   font-size: 14pt;
+  margin: 22px 0px 10px 0px;
 }
 
 .input-div {
@@ -31,6 +49,10 @@ p.descriptor {
 
 .signup-div {
   margin: 30px
+}
+
+.submit-button-div {
+  margin: 10px;
 }
 
 .signup-div button {

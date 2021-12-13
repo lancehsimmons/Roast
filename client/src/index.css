@@ -32,9 +32,9 @@ input {
   width: 200px
 }
 
-/* input, label {
-  display: block;
-} */
+span.slable {
+  margin-bottom: 30px 
+}
 
 button {
   background-color: #C3793C;
