@@ -6,6 +6,7 @@
 .descriptor {
   font-style: italic;
   background-color: #C3793C;
+  font-size: 18px;
 }
 
 .descriptor-div {
@@ -26,4 +27,12 @@ h5 {
 
 p.descriptor {
   margin: 5px 0px 5px 0px
+}
+
+.signup-div {
+  margin: 30px
+}
+
+.signup-div button {
+  width: 200px
 }

@@ -55,12 +55,12 @@ export default function SignIn({ handleSignIn }) {
               onChange={handleChange}
             />
           <br />
-          <button>Submit</button>
+          <button>SUBMIT</button>
+            <div className='signup-div'>
           <Link to='/sign-up'>
-            <div>
-            <button>Sign Up</button>
-            </div>
+            <button>SIGN UP</button>
           </Link>
+            </div>
         </div>
       </form>
     </div>
