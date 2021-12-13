@@ -18,17 +18,19 @@ export default function SignIn({handleSignIn}) {
   };
   return (
     <div>
+
       <h1>OAST</h1>
       <div className='descriptor-div'>
         <p className='descriptor'>A dynamic, precision log</p>
         <p className='descriptor'>     for home coffee roasting</p>
-
       </div>
+
     <form onSubmit={(e)=> {
       e.preventDefault();
       handleSignIn(formData);
     }}>
-      <h5>SIGN IN</h5>
+        <h5>SIGN IN</h5>
+      <div className='input-div'>
       <label>
         Username:
         <input
@@ -51,6 +53,7 @@ export default function SignIn({handleSignIn}) {
       <br />
       <Link to='/sign-up'>Sign Up</Link>
       <button>Submit</button>
+    </div>
     </form>
     </div>
   )

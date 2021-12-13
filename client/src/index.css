@@ -26,9 +26,10 @@ input {
   background-color: #FFF1E2;
   border: none;
   border-radius: 3px;
-  
+  align-self: middle;
+  display: block;
 }
 
 input, label {
-  display: block;
+  display: inline-block;
 }
