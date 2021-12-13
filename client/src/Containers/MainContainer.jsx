@@ -6,7 +6,7 @@ import CoffeeDetail from '../screens/CoffeeDetail'
 import AddRoast from '../screens/AddRoast'
 import CoffeeEdit from '../screens/CoffeeEdit'
 import { verifyUser, loginUser } from '../services/auth'
-import {getAllCoffees, postCoffee, putCoffee, deleteCoffee} from '../services/coffee'
+import { getAllCoffees, postCoffee, putCoffee, deleteCoffee } from '../services/coffee'
 
 
 export default function MainContainer({ currentUser, setCurrentUser }) {
@@ -35,7 +35,7 @@ export default function MainContainer({ currentUser, setCurrentUser }) {
         return coffee.id === Number(id) ? newCoffee : coffee;
       })
     )
-    history.push(`/`)
+    history.push(`/coffees/${id}`)
   }
 
   const handleCoffeeDelete = async (id) => {
@@ -63,18 +63,18 @@ export default function MainContainer({ currentUser, setCurrentUser }) {
       <h2>main</h2>
       <Switch>
 
-      <Route path='/add-roast'>
+        <Route path='/add-roast'>
           <AddRoast
             coffees={coffees}
             handleAddRoast={handleAddRoast} />
         </Route>
 
         <Route path='/coffees/:id/edit'>
-          <CoffeeEdit coffees={coffees} handleCoffeeUpdate={handleCoffeeUpdate}/>
+          <CoffeeEdit coffees={coffees} handleCoffeeUpdate={handleCoffeeUpdate} />
         </Route>
 
         <Route path='/coffees/:id'>
-          <CoffeeDetail/>
+          <CoffeeDetail />
         </Route>
 
         <Route path='/' >

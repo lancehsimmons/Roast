@@ -9,7 +9,6 @@ export default function List({ coffees, handleCoffeeDelete}) {
           <Link to={`/coffees/${coffee.id}`}>
             <p>{coffee.name}</p>
           </Link>
-          {coffee.id}
           <button onClick={() => handleCoffeeDelete(coffee.id)}>
             Delete
           </button>
