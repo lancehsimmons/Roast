@@ -1,13 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
+
+
 body {
+  background-color: #E3A76B;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Jost", serif;
+  color: #844A23;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #844A23;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input {
+  background-color: #FFF1E2;
+  border: none;
+  border-radius: 3px;
+  
+}
+
+input, label {
+  display: block;
 }

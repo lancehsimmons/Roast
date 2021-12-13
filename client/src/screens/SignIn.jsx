@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+import '../assets/sign-in.css'
 
 export default function SignIn({handleSignIn}) {
   const [formData, setFormData] = useState({
@@ -17,12 +18,17 @@ export default function SignIn({handleSignIn}) {
   };
   return (
     <div>
-      <h1>Roast</h1>
+      <h1>OAST</h1>
+      <div className='descriptor-div'>
+        <p className='descriptor'>A dynamic, precision log</p>
+        <p className='descriptor'>     for home coffee roasting</p>
+
+      </div>
     <form onSubmit={(e)=> {
       e.preventDefault();
       handleSignIn(formData);
     }}>
-      <h3>Login</h3>
+      <h5>SIGN IN</h5>
       <label>
         Username:
         <input
