@@ -1,4 +1,8 @@
 
+.tagline {
+  font-family: 'Spectral', serif;
+}
+
 .descriptor {
   font-style: italic;
   background-color: #C3793C;
@@ -9,6 +13,7 @@
   color: #FFF1E2;
   font-style: italic;
   font-family: 'Spectral', serif;
+  padding: 10px 0px 10px 0px;
 }
 
 h5 {
@@ -17,4 +22,8 @@ h5 {
 
 .input-div {
   text-align: center;
+}
+
+p.descriptor {
+  margin: 5px 0px 5px 0px
 }

@@ -20,6 +20,9 @@ export default function SignIn({ handleSignIn }) {
     <div>
 
       <h1>OAST</h1>
+      <div>
+        <h3 className='tagline'>Perfect your Home Roasts</h3>
+      </div>
       <div className='descriptor-div'>
         <p className='descriptor'>A dynamic, precision log</p>
         <p className='descriptor'>     for home coffee roasting</p>
