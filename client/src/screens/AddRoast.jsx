@@ -47,7 +47,6 @@ export default function AddRoast({ handleAddRoast }) {
         handleAddRoast(formData)
       }}
     >
-      <h3>Create Food</h3>
       <label>
         Name:
         <input type='text' name='name' value={name} onChange={handleChange} />
