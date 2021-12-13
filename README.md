@@ -114,8 +114,8 @@ src
 | React setup   |    H     |     1 hrs      |      1hrs     |     TBD     |
 | file structuring |    H  |     1 hrs      |      1hrs     |     TBD     |
 | auth routes   |    L     |     3 hrs      |      6hrs     |     TBD     |
-| CRUD routes   |    H     |     3 hrs      |      2hrs     |     TBD     |
-| testing routes |    H    |     3 hrs      |      hrs     |     TBD     |
+| CRUD routes   |    H     |     3 hrs      |      7hrs     |     TBD     |
+| testing routes |    H    |     3 hrs      |      2hrs     |     TBD     |
 | basic layout  |    H     |     6 hrs      |      hrs     |     TBD     |  
 | organizing logic | H     |     2 hrs      |      hrs     |     TBD     |  
 | basic css     |    H     |     5 hrs      |      hrs     |     TBD     |
