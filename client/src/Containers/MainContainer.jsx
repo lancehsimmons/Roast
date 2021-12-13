@@ -43,21 +43,6 @@ export default function MainContainer({ currentUser, setCurrentUser }) {
     setCoffees((prevState) => prevState.filter((coffee) => coffee.id !== id))
   };
 
-  useEffect(() => {
-    const handleVerify = async () => {
-      const userData = await verifyUser();
-      debugger
-      setCurrentUser(userData);
-    };
-    handleVerify();
-  }, []);
-
-  const handleLogin = async (formData) => {
-    const userData = await loginUser(formData);
-    setCurrentUser(userData);
-    history.push('/');
-  };
-
   return (
     <div>
       <Switch>
@@ -77,11 +62,9 @@ export default function MainContainer({ currentUser, setCurrentUser }) {
         </Route>
 
         <Route path='/' >
-          {currentUser ?
-            <List coffees={coffees} handleCoffeeDelete={handleCoffeeDelete} /> :
-            <SignIn handleLogin={handleLogin} />}
+        <List coffees={coffees} handleCoffeeDelete={handleCoffeeDelete} />
         </Route>
-        
+
       </Switch>
     </div>
   )

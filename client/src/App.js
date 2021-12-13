@@ -1,6 +1,6 @@
 import './App.css';
 
-import { Route, Switch, useHistory } from 'react-router-dom'
+import { Route, Redirect, Switch, useHistory } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import Layout from './components/Layout'
@@ -23,12 +23,21 @@ function App() {
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser();
+      debugger
       setCurrentUser(userData);
     };
     handleVerify();
   }, []);
 
-  const handleLogin = async (formData) => {
+  useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser();
+      setCurrentUser(userData);
+    };
+    handleVerify();
+  }, []);
+
+  const handleSignIn = async (formData) => {
     const userData = await loginUser(formData);
     setCurrentUser(userData);
     history.push('/');
@@ -54,13 +63,21 @@ function App() {
           <Route path='/sign-up'>
             <SignUp handleSignup={handleSignup} />
           </Route>
+
           <Route path='/sign-in'>
-            <SignIn handleLogin={handleLogin} />
+          {currentUser ?
+              <Redirect to='/' />
+              : <SignIn handleSignIn={handleSignIn} />
+            }
+            {/* <SignIn handleLogin={handleLogin} /> */}
           </Route>
           <Route path='/'>
-            {/* {currentUser ? <MainContainer/> : <Redirect to='/sign-in'/>} */}
-            <MainContainer currentUser={currentUser}
-              setCurrentUser={setCurrentUser}/>
+          {currentUser ?
+              <MainContainer currentUser={currentUser} handleSignIn={handleSignIn} />
+              : <Redirect to='/sign-in' />
+            }
+            {/* <MainContainer currentUser={currentUser}
+              setCurrentUser={setCurrentUser}/> */}
           </Route>
         </Switch>
       </Layout>

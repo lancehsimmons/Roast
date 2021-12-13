@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-export default function SignIn({handleLogin}) {
+export default function SignIn({handleSignIn}) {
   const [formData, setFormData] = useState({
     username: '',
     password: '',
@@ -20,7 +20,7 @@ export default function SignIn({handleLogin}) {
       <h1>Roast</h1>
     <form onSubmit={(e)=> {
       e.preventDefault();
-      handleLogin(formData);
+      handleSignIn(formData);
     }}>
       <h3>Login</h3>
       <label>
