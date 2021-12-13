@@ -86,5 +86,3 @@ export default function MainContainer({ currentUser, setCurrentUser }) {
     </div>
   )
 }
-
-// localStorage.getItem('authToken') !== null
