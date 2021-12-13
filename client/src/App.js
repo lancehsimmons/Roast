@@ -59,7 +59,8 @@ function App() {
           </Route>
           <Route path='/'>
             {/* {currentUser ? <MainContainer/> : <Redirect to='/sign-in'/>} */}
-            <MainContainer />
+            <MainContainer currentUser={currentUser}
+              setCurrentUser={setCurrentUser}/>
           </Route>
         </Switch>
       </Layout>
