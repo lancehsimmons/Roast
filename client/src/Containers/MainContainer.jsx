@@ -60,7 +60,6 @@ export default function MainContainer({ currentUser, setCurrentUser }) {
 
   return (
     <div>
-      <h2>main</h2>
       <Switch>
 
         <Route path='/add-roast'>
@@ -82,6 +81,7 @@ export default function MainContainer({ currentUser, setCurrentUser }) {
             <List coffees={coffees} handleCoffeeDelete={handleCoffeeDelete} /> :
             <SignIn handleLogin={handleLogin} />}
         </Route>
+        
       </Switch>
     </div>
   )

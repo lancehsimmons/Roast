@@ -8,19 +8,19 @@ export default function Layout({ currentUser, handleLogout, children }) {
 
   return (
     <div>
-    <Link to='/'>
-    </Link> 
-    {currentUser &&
+      <Link to='/'>
+      </Link>
+      {currentUser &&
         <>
-        <nav>
+          <nav>
             <h4>welcome, {currentUser.username}</h4>
-              <div onClick={handleLogout}>Logout</div>
+            <div onClick={handleLogout}>Logout</div>
             <NavLink to='/'>
               <div>Home</div>
             </NavLink>
-        </nav>
-      </>
-    }
+          </nav>
+        </>
+      }
       {children}
     </div>
   )
