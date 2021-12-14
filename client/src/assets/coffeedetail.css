@@ -1,0 +1,18 @@
+.detail-div {
+  background-color: #FFF1E2;
+  border-radius: 4px;
+  width: 400px;
+  margin: 15px 0px 15px 0px;
+}
+
+hr {
+  border: 0.5px solid #844A23;
+  background-color: #844A23;
+  /* border: #844A23; */
+  width: 80%;
+
+}
+
+.edit-button {
+  width: 200px
+}
