@@ -1,0 +1,18 @@
+
+  .list-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.list-one-div {
+  background-color: #FFF1E2;
+  border-radius: 4px;
+  width: 400px;
+  margin: 15px 0px 15px 0px;
+}
+
+h5 {
+  text-align: left;
+  margin: 15px 0px 5px 10px;
+}
