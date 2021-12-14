@@ -17,9 +17,12 @@ hr {
   background-color: #844A23;
   /* border: #844A23; */
   width: 80%;
-
 }
 
 .edit-button {
   width: 200px
+}
+
+.key-val-div {
+  text-align: left;
 }

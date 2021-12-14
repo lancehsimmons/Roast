@@ -20,67 +20,40 @@ export default function CoffeeDetail({ currentUser }) {
   return (
     <div>
       <div className='card-contain'>
-      <Link to={`/coffees/${coffee?.id}/edit`}>
-        <button className='edit-button'>EDIT</button>
-      </Link>
+        <Link to={`/coffees/${coffee?.id}/edit`}>
+          <button className='edit-button'>EDIT</button>
+        </Link>
 
-      <div className='detail-div'>
-        <div className='list-title'>
-          <div><h5>COFFEE</h5></div>
-          <div className='date-div'>
-            <h5 className='date'>
-              DATE: {coffee?.created_at.slice(0, 10)}
-            </h5>
+        <div className='detail-div'>
+          <div className='list-title'>
+            <div><h5>COFFEE</h5></div>
+            <div className='date-div'>
+              <h5 className='date'>
+                DATE: {coffee?.created_at.slice(0, 10)}
+              </h5>
+            </div>
           </div>
+
+          <p>{coffee?.name}</p>
+          <hr />
+
+          <div className='key-val-div'>
+            <p>Roast Time:    {coffee?.roast_time}</p>
+            <p>Roast Level:    {coffee?.roast_level}</p>
+            <p>Roaster Settings:    {coffee?.roaster_settings}</p>
+            <p>Preheat Time/Temp:    {coffee?.preheat}</p>
+            <p>Yellowing:    {coffee?.yellowing}</p>
+            <p>Browning:    {coffee?.browning}</p>
+            <p>First Crack:    {coffee?.first_crack}</p>
+            <p>Second Crack:    {coffee?.second_crack}</p>
+            <p>First Crack Ends:    {coffee?.first_crack_end}</p>
+            <p>End/Drop:    {coffee?.end_drop}</p>
+            <p>Notes:    {coffee?.notes}</p>
+          </div>
+
+
+
         </div>
-
-        <p>{coffee?.name}</p>
-        <hr />
-        <label>
-
-          <p>Roast Time:    {coffee?.roast_time}</p>
-        </label>
-        <label>
-          Roast Level:
-          <p>{coffee?.roast_level}</p>
-        </label>
-        <label>
-          Roaster Settings:
-          <p>{coffee?.roaster_settings}</p>
-        </label>
-        <label>
-          Preheat Time/Temp:
-          <p>{coffee?.preheat}</p>
-        </label>
-        <label>
-          Yellowing:
-          <p>{coffee?.yellowing}</p>
-        </label>
-        <label>
-          Browning:
-          <p>{coffee?.browning}</p>
-        </label>
-        <label>
-          First Crack:
-          <p>{coffee?.first_crack}</p>
-        </label>
-        <label>
-          Second Crack:
-          <p>{coffee?.second_crack}</p>
-        </label>
-        <label>
-          First Crack Ends:
-          <p>{coffee?.first_crack_end}</p>
-        </label>
-        <label>
-          End/Drop:
-          <p>{coffee?.end_drop}</p>
-        </label>
-        <label>
-          Notes:
-          <p>{coffee?.notes}</p>
-        </label>
-      </div>
 
       </div>
     </div>
