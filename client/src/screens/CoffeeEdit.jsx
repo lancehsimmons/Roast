@@ -65,13 +65,12 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
   return (
     <div>
       <h3>Edit Your Roast</h3>
-      <h1>add a roast here</h1>
-      <form
+      {/* <form
       onSubmit={(e) => {
           e.preventDefault()
         handleCoffeeUpdate(id, formData)
       }}
-    >
+    > */}
 
       {/* <label>
         Name:
@@ -132,11 +131,16 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
         Notes:
         <input type='text' name='notes' value={notes} onChange={handleChange} />
         </label> */}
-        <br />
+        {/* <br />
           <button>Submit</button>
-      </form>
+      </form> */}
 
-      <form>
+      <form
+      onSubmit={(e) => {
+          e.preventDefault()
+        handleCoffeeUpdate(id, formData)
+      }}
+    >
       <button>Submit</button>
       <div class="divTable">
             <div class="divTableBody">
