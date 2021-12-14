@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
+import '../assets/coffeeedit.css'
+
 export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
   const { id } = useParams();
   const [formData, setFormData] = useState({
@@ -134,6 +136,7 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
       {/* <br />
           <button>Submit</button>
       </form> */}
+
       <div className='card-contain'>
         
           <form
@@ -142,7 +145,7 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
               handleCoffeeUpdate(id, formData)
             }}
           >
-            <button>SUBMIT EDIT</button>
+            <button className='edit-submit-button'>SUBMIT EDIT</button>
             <div className='detail-div'>
             <div className='list-title'>
               <div><h5>COFFEE</h5></div>
@@ -155,15 +158,15 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
               <div class="divTableBody">
                 <div class="divTableRow">
                   <div class="divTableCell">Roast Time:</div>
-                  <div class="divTableCell">        <input type='text' name='name' value={name} onChange={handleChange} /></div>
-                </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">Roast Level:</div>
                   <div class="divTableCell">        <input type='text' name='roast_time' value={roast_time} onChange={handleChange} /></div>
                 </div>
                 <div class="divTableRow">
+                  <div class="divTableCell">Roast Level:</div>
+                  <div class="divTableCell">        <input type='text' name='roast_level' value={roast_level} onChange={handleChange} /></div>
+                </div>
+                <div class="divTableRow">
                   <div class="divTableCell">Roaster Settings:</div>
-                  <div class="divTableCell"><input type='text' name='roast_level' value={roast_level} onChange={handleChange} /></div>
+                  <div class="divTableCell"><input type='text' name='roaster_settings' value={roaster_settings} onChange={handleChange} /></div>
                 </div>
                 <div class="divTableRow">
                   <div class="divTableCell">Preheat Time/Temp:</div>
