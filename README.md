@@ -116,10 +116,10 @@ src
 | auth          |    L     |     3 hrs      |      8hrs    |     TBD     |
 | CRUD          |    H     |     3 hrs      |      8hrs    |     TBD     |
 | testing routes |    H    |     3 hrs      |      3hrs    |     TBD     |
-| basic layout  |    H     |     6 hrs      |      hrs     |     TBD     |  
-| organizing logic | H     |     2 hrs      |      hrs     |     TBD     |  
-| basic css     |    H     |     5 hrs      |      hrs     |     TBD     |
-| refining css  |    H     |     4 hrs      |      hrs     |     TBD     |
+| basic layout  |    H     |     6 hrs      |      4hrs     |     TBD     |  
+| organizing logic | H     |     2 hrs      |      0hrs     |     TBD     |  
+| basic css     |    H     |     5 hrs      |      3hrs     |     TBD     |
+| refining css  |    H     |     4 hrs      |      1hrs     |     TBD     |
 | TOTAL         |    H     |     39 hrs     |      hrs     |     TBD     |
 
 
