@@ -30,16 +30,22 @@ h5 {
   margin: 0px 10px 0px 0px;
 }
 
-h5.date-div {
-  font-size: 12pt;
+.date {
+  font-size: 11pt;
 }
 
 .name {
   margin: 5px 5px 10px 10px;
 }
 
+.delete-contain {
+  display: flex;
+  justify-content: flex-end
+}
+
 .delete {
   margin-bottom: 10px;
+  margin-right: 10px;
   text-align: right;
 } 
 
