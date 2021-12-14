@@ -1,0 +1,65 @@
+
+.tagline {
+  font-family: 'Spectral', serif;
+}
+
+.descriptor {
+  font-style: italic;
+  background-color: #C3793C;
+  font-size: 18px;
+}
+
+.descriptor-div {
+  background-color: #C3793C;
+  color: #FFF1E2;
+  font-style: italic;
+  font-family: 'Spectral', serif;
+  padding: 10px 0px 10px 0px;
+}
+
+
+.sign-in-label-flex-contain {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-label-div {
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0px 10px 0px;
+}
+
+h5 .sign-in-label-div {
+  font-size: 12px;
+}
+
+.sign-in-text-div {
+  display: flex;
+  justify-content: flex-start
+}
+
+h5 {
+  font-size: 14pt;
+  margin: 22px 0px 10px 0px;
+}
+
+.input-div {
+  text-align: center;
+}
+
+p.descriptor {
+  margin: 5px 0px 5px 0px
+}
+
+.signup-div {
+  margin: 30px
+}
+
+.submit-button-div {
+  margin: 10px;
+}
+
+.signup-div button {
+  width: 200px
+}
