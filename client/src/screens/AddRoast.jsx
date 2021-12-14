@@ -47,65 +47,76 @@ export default function AddRoast({ handleAddRoast }) {
         handleAddRoast(formData)
       }}
     >
-      <label>
-        Name:
+        <span className='slable'>
+            COFFEE
+          </span><br />
         <input type='text' name='name' value={name} onChange={handleChange} />
-        </label>
-        <br/>
-        <label>
-        Roast Time:
+      <br/>
+        <span className='slable'>
+            ROAST TIME
+          </span><br />
         <input type='text' name='roast_time' value={roast_time} onChange={handleChange} />
-        </label>
-        <br/>
-        <label>
-        Roast Level:
+      <br/>
+
+        <span className='slable'>
+            ROAST LEVEL
+          </span><br />
         <input type='text' name='roast_level' value={roast_level} onChange={handleChange} />
-        </label>
+
         <br/>
-        <label>
-        Roaster Settings:
+        <span className='slable'>
+            ROASTER SETTINGS
+          </span><br />
         <input type='text' name='roaster_settings' value={roaster_settings} onChange={handleChange} />
-        </label>
+
         <br/>
-        <label>
-        Preheat Time/Temp:
+        <span className='slable'>
+           PREHEAT TIME/TEMP
+          </span><br />
         <input type='text' name='preheat' value={preheat} onChange={handleChange} />
-        </label>
-        <br/>
-        <label>
-        Yellowing:
+ 
+        <br />
+        <span className='slable'>
+          YELLOWING
+        </span><br />
         <input type='text' name='yellowing' value={yellowing} onChange={handleChange} />
-        </label>
         <br/>
-        <label>
-        Browning:
+
+        <span className='slable'>
+            BROWNING
+          </span><br />
         <input type='text' name='browning' value={browning} onChange={handleChange} />
-        </label>
         <br/>
-        <label>
-        First Crack:
+
+        <span className='slable'>
+          FIRST CRACK
+          </span><br />
         <input type='text' name='first_crack' value={first_crack} onChange={handleChange} />
-        </label>
-        <br/>
-        <label>
-        Second Crack:
+        <br />
+        
+        <span className='slable'>
+            SECOND CRACK
+          </span><br />
         <input type='text' name='second_crack' value={second_crack} onChange={handleChange} />
-        </label>
-        <br/>
-        <label>
-        First Crack Ends:
+        <br />
+
+        <span className='slable'>
+            FIRST CRACK ENDS
+          </span><br />
         <input type='text' name='first_crack_end' value={first_crack_end} onChange={handleChange} />
-        </label>
-        <br/>
-        <label>
-        End/Drop:
+        <br />
+        
+        <span className='slable'>
+            END/DROP
+          </span><br />
         <input type='text' name='end_drop' value={end_drop} onChange={handleChange} />
-        </label>
-        <br/>
-        <label>
-        Notes:
+        <br />
+        
+        <span className='slable'>
+            NOTES
+          </span><br />
         <input type='text' name='notes' value={notes} onChange={handleChange} />
-        </label>
+        
         <br/>
       <button>Submit</button>
     </form>
