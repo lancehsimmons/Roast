@@ -1,3 +1,32 @@
+/* .add-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
 .save-button {
   width: 200px
+}
+
+.add-table {
+  display: flex;
+  flex-direction: column;
+  /* width: 200px; */
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+.input-contain {
+text-align: center;
+width: 80vw;
+}
+
+.field-div {
+  /* width: 80vw;   */
+  text-align: left;
+}
+
+.slabel {
+  text-align: left;
 }
