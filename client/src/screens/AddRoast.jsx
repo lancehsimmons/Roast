@@ -134,7 +134,7 @@ export default function AddRoast({ handleAddRoast }) {
             <span className='slable'>
               NOTES
             </span><br />
-            <input type='text' name='notes' value={notes} onChange={handleChange} />
+            <textarea className='add-notes' type='text' name='notes' value={notes} onChange={handleChange} />
           </div>
         </div>
         <br />

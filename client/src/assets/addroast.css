@@ -5,7 +5,8 @@
 } */
 
 .save-button {
-  width: 200px
+  width: 200px;
+  margin-bottom: 30px;
 }
 
 .add-table {
@@ -14,7 +15,6 @@
   /* width: 200px; */
   align-items: center;
   justify-content: center;
-  background-color: red;
 }
 
 .input-contain {
@@ -23,10 +23,14 @@ width: 80vw;
 }
 
 .field-div {
-  /* width: 80vw;   */
   text-align: left;
 }
 
 .slabel {
   text-align: left;
 }
+
+.add-table input{
+  width: 75vw;
+}
+
