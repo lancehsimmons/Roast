@@ -134,14 +134,15 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
         {/* <br />
           <button>Submit</button>
       </form> */}
-
+      <div className='card-contain'>
+      <div className='detail-div'>
       <form
       onSubmit={(e) => {
           e.preventDefault()
         handleCoffeeUpdate(id, formData)
       }}
     >
-      <button>Submit</button>
+      <button>SUBMIT EDIT</button>
       <div class="divTable">
             <div class="divTableBody">
               <div class="divTableRow">
@@ -191,7 +192,8 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
             </div>
           </div>
           </form>
-
+          </div>
+</div>
             {/* table formatting from https://divtable.com/generator/ */}
 
 
