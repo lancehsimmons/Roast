@@ -19,6 +19,7 @@ export default function CoffeeDetail({ currentUser }) {
 
   return (
     <div>
+      <div className='card-contain'>
       <Link to={`/coffees/${coffee?.id}/edit`}>
         <button className='edit-button'>EDIT</button>
       </Link>
@@ -81,7 +82,7 @@ export default function CoffeeDetail({ currentUser }) {
         </label>
       </div>
 
-
+      </div>
     </div>
   )
 }

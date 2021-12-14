@@ -1,12 +1,19 @@
+.card-contain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .detail-div {
   background-color: #FFF1E2;
   border-radius: 4px;
   width: 400px;
   margin: 15px 0px 15px 0px;
+  padding: 15px 12px 10px 12px;
 }
 
 hr {
-  border: 0.5px solid #844A23;
+  border: 0.4px solid #844A23;
   background-color: #844A23;
   /* border: #844A23; */
   width: 80%;
