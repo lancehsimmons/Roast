@@ -52,56 +52,54 @@ export default function CoffeeDetail({ currentUser }) {
           </div>
 
           <div class="divTable">
-<div class="divTableBody">
-<div class="divTableRow">
-<div class="divTableCell">Roast Time:</div>
-<div class="divTableCell">{coffee?.roast_time}</div>
-</div>
-<div class="divTableRow">
-<div class="divTableCell">Roast Level:</div>
-<div class="divTableCell">{coffee?.roast_level}</div>
-</div>
-<div class="divTableRow">
-<div class="divTableCell">Roaster Settings:</div>
-<div class="divTableCell">{coffee?.roaster_settings}</div>
-</div>
-<div class="divTableRow">
-<div class="divTableCell">Preheat Time/Temp:</div>
-<div class="divTableCell">{coffee?.preheat}</div>
-</div>
-<div class="divTableRow">
-<div class="divTableCell">Yellowing:</div>
-<div class="divTableCell">{coffee?.yellowing}</div>
-</div>
-<div class="divTableRow">
-<div class="divTableCell">Browning:</div>
-<div class="divTableCell">{coffee?.browning}</div>
-</div>
-<div class="divTableRow">
-<div class="divTableCell">First Crack: </div>
-<div class="divTableCell">{coffee?.first_crack}</div>
-</div>
-<div class="divTableRow">
-<div class="divTableCell">Second Crack:</div>
-<div class="divTableCell">{coffee?.second_crack}</div>
-</div>
-<div class="divTableRow">
-<div class="divTableCell">First Crack Ends:</div>
-<div class="divTableCell">{coffee?.first_crack_end}</div>
-</div>
-<div class="divTableRow">
-<div class="divTableCell">End/Drop:</div>
-<div class="divTableCell">{coffee?.end_drop}</div>
-</div>
-<div class="divTableRow">
-<div class="divTableCell">Notes:</div>
-<div class="divTableCell">{coffee?.notes}</div>
-</div>
-</div>
-</div>
-
-
-
+            <div class="divTableBody">
+              <div class="divTableRow">
+                <div class="divTableCell">Roast Time:</div>
+                <div class="divTableCell">{coffee?.roast_time}</div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell">Roast Level:</div>
+                <div class="divTableCell">{coffee?.roast_level}</div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell">Roaster Settings:</div>
+                <div class="divTableCell">{coffee?.roaster_settings}</div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell">Preheat Time/Temp:</div>
+                <div class="divTableCell">{coffee?.preheat}</div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell">Yellowing:</div>
+                <div class="divTableCell">{coffee?.yellowing}</div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell">Browning:</div>
+                <div class="divTableCell">{coffee?.browning}</div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell">First Crack: </div>
+                <div class="divTableCell">{coffee?.first_crack}</div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell">Second Crack:</div>
+                <div class="divTableCell">{coffee?.second_crack}</div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell">First Crack Ends:</div>
+                <div class="divTableCell">{coffee?.first_crack_end}</div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell">End/Drop:</div>
+                <div class="divTableCell">{coffee?.end_drop}</div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell">Notes:</div>
+                <div class="divTableCell">{coffee?.notes}</div>
+              </div>
+            </div>
+          </div>
+            {/* table formatting from https://divtable.com/generator/ */}
         </div>
 
       </div>

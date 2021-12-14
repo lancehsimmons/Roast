@@ -19,14 +19,13 @@ export default function SignUp({ handleSignup }) {
 
   return (
     <div>
-      <h4>sign up</h4>
       <form
       onSubmit={(e) => {
         e.preventDefault();
         handleSignup(formData);
       }}
     >
-      <h3>Register</h3>
+      <h3>SIGN UP</h3>
       <label>
         Username:
         <input
@@ -57,7 +56,7 @@ export default function SignUp({ handleSignup }) {
         />
       </label>
       <br />
-      <button>Submit</button>
+      <button>SUBMIT</button>
     </form>
     </div>
   )

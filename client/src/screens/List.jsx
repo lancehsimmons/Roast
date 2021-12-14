@@ -9,7 +9,9 @@ export default function List({ coffees, handleCoffeeDelete }) {
 
   return (
     <div>
-      <button className='add-button'>ADD ROAST</button>
+      <Link to='/add-roast'>
+        <button className='add-button'>ADD ROAST</button>
+      </Link>
 
       <div className='list-div'>
         {coffees.map((coffee) =>
@@ -36,8 +38,7 @@ export default function List({ coffees, handleCoffeeDelete }) {
           </div>
         )}
       </div>
-      <Link to='/add-roast'>
-      </Link>
+
     </div>
   )
 }

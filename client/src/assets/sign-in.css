@@ -27,6 +27,11 @@
   width: 200px;
   display: flex;
   justify-content: flex-start;
+  margin: 20px 0px 10px 0px;
+}
+
+h5 .sign-in-label-div {
+  font-size: 12px;
 }
 
 .sign-in-text-div {
