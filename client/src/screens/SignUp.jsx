@@ -20,7 +20,7 @@ export default function SignUp({ handleSignup }) {
   return (
     <div>
       
-      <div className=''>
+      <div className='signup-title-div'>
       <h3>SIGN UP</h3>
       </div>
 

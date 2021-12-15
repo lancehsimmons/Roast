@@ -41,7 +41,6 @@ export default function AddRoast({ handleAddRoast }) {
 
   return (
     <div className='add-body'>
-      <h1>add a roast here</h1>
       <form
         onSubmit={(e) => {
           e.preventDefault()
