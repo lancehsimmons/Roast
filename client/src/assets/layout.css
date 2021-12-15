@@ -1,6 +1,6 @@
 .nav-div {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .logo2 {
@@ -35,6 +35,11 @@ nav {
   nav {
     flex-direction: row;
   }
+
+ .nav-div{
+   justify-content: space-evenly;
+ }
+
   .nav-item{
     margin: 0px 15px;
   }
