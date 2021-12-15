@@ -13,28 +13,14 @@ export default function Layout({ currentUser, handleLogout, children }) {
 
   let navOptions
   switch (location.pathname) {
-    case '/' || '/sign-in':
+    case  '/sign-in':
       navOptions = <></>
       break
-    case '/coffees/' || '/add-roast':
+    case '/' || '/coffees/' || '/add-roast':
       navOptions = <>
-        <img src='/assets/images/roast_logo2' alt='a coffee alchemist' />
-        logged in</>
-      break
-    case '/sign-up':
-      navOptions = <>
-        <NavLink to='/'>
-          <div>Home</div>
-        </NavLink>
-        logged out</>
-  }
-
-  return (
-    <div>
-      <>{navOptions}</>
-      <Link to='/'>
-      </Link>
-      {currentUser &&
+        <img src='../images/roast_logo2.png' alt='a coffee alchemist' />
+        logged in
+        {currentUser &&
         <>
           <nav>
             <div>
@@ -52,6 +38,22 @@ export default function Layout({ currentUser, handleLogout, children }) {
           </nav>
         </>
       }
+      </>
+      break
+    case '/sign-up':
+      navOptions = <>
+        <NavLink to='/'>
+          <div>Home</div>
+        </NavLink>
+        logged out</>
+  }
+
+  return (
+    <div>
+      <>{navOptions}</>
+      <Link to='/'>
+      </Link>
+      
       {children}
     </div>
   )
