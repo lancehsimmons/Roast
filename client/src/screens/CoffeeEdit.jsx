@@ -83,51 +83,51 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
               </div>
             </div>
             <hr />
-            <div class="divTable">
-              <div class="divTableBody">
-                <div class="divTableRow">
-                  <div class="divTableCell">Roast Time:</div>
-                  <div class="divTableCell">        <input type='text' name='roast_time' value={roast_time} onChange={handleChange} /></div>
+            <div className="divTable">
+              <div className="divTableBody">
+                <div className="divTableRow">
+                  <div className="divTableCell">Roast Time:</div>
+                  <div className="divTableCell">        <input type='text' name='roast_time' value={roast_time} onChange={handleChange} /></div>
                 </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">Roast Level:</div>
-                  <div class="divTableCell">        <input type='text' name='roast_level' value={roast_level} onChange={handleChange} /></div>
+                <div className="divTableRow">
+                  <div className="divTableCell">Roast Level:</div>
+                  <div className="divTableCell">        <input type='text' name='roast_level' value={roast_level} onChange={handleChange} /></div>
                 </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">Roaster Settings:</div>
-                  <div class="divTableCell"><input type='text' name='roaster_settings' value={roaster_settings} onChange={handleChange} /></div>
+                <div className="divTableRow">
+                  <div className="divTableCell">Roaster Settings:</div>
+                  <div className="divTableCell"><input type='text' name='roaster_settings' value={roaster_settings} onChange={handleChange} /></div>
                 </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">Preheat Time/Temp:</div>
-                  <div class="divTableCell"><input type='text' name='preheat' value={preheat} onChange={handleChange} /></div>
+                <div className="divTableRow">
+                  <div className="divTableCell">Preheat Time/Temp:</div>
+                  <div className="divTableCell"><input type='text' name='preheat' value={preheat} onChange={handleChange} /></div>
                 </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">Yellowing:</div>
-                  <div class="divTableCell"><input type='text' name='yellowing' value={yellowing} onChange={handleChange} /></div>
+                <div className="divTableRow">
+                  <div className="divTableCell">Yellowing:</div>
+                  <div className="divTableCell"><input type='text' name='yellowing' value={yellowing} onChange={handleChange} /></div>
                 </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">Browning:</div>
-                  <div class="divTableCell"><input type='text' name='browning' value={browning} onChange={handleChange} /></div>
+                <div className="divTableRow">
+                  <div className="divTableCell">Browning:</div>
+                  <div className="divTableCell"><input type='text' name='browning' value={browning} onChange={handleChange} /></div>
                 </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">First Crack: </div>
-                  <div class="divTableCell"><input type='text' name='first_crack' value={first_crack} onChange={handleChange} /></div>
+                <div className="divTableRow">
+                  <div className="divTableCell">First Crack: </div>
+                  <div className="divTableCell"><input type='text' name='first_crack' value={first_crack} onChange={handleChange} /></div>
                 </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">Second Crack:</div>
-                  <div class="divTableCell"><input type='text' name='second_crack' value={second_crack} onChange={handleChange} /></div>
+                <div className="divTableRow">
+                  <div className="divTableCell">Second Crack:</div>
+                  <div className="divTableCell"><input type='text' name='second_crack' value={second_crack} onChange={handleChange} /></div>
                 </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">First Crack Ends:</div>
-                  <div class="divTableCell"><input type='text' name='first_crack_end' value={first_crack_end} onChange={handleChange} /></div>
+                <div className="divTableRow">
+                  <div className="divTableCell">First Crack Ends:</div>
+                  <div className="divTableCell"><input type='text' name='first_crack_end' value={first_crack_end} onChange={handleChange} /></div>
                 </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">End/Drop:</div>
-                  <div class="divTableCell"><input type='text' name='end_drop' value={end_drop} onChange={handleChange} /></div>
+                <div className="divTableRow">
+                  <div className="divTableCell">End/Drop:</div>
+                  <div className="divTableCell"><input type='text' name='end_drop' value={end_drop} onChange={handleChange} /></div>
                 </div>
-                <div class="divTableRow">
-                  <div class="divTableCell">Notes:</div>
-                  <div class="divTableCell">       <input type='text' name='notes' value={notes} onChange={handleChange} /></div>
+                <div className="divTableRow">
+                  <div className="divTableCell">Notes:</div>
+                  <div className="divTableCell">       <input type='text' name='notes' value={notes} onChange={handleChange} /></div>
                 </div>
               </div>
             </div>
