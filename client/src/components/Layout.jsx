@@ -18,9 +18,10 @@ export default function Layout({ currentUser, handleLogout, children }) {
         {currentUser ? 
           <>
           <nav>
-            <img className='logo2' src='../images/roast_logo2.png' alt='a coffee alchemist' />
-            <div>
-              <h4 className='welcome'>welcome, {currentUser.username}</h4>
+              <img className='logo2' src='../images/roast_logo2.png' alt='a coffee alchemist' />
+              
+            <div classname='welcome-div'>
+              <h2 className='welcome'>welcome, {currentUser.username}</h2>
             </div>
     
             <div onClick={handleLogout}>Logout

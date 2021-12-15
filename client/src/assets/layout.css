@@ -2,13 +2,17 @@
   height: 250px;
 }
 
+.welcome {
+  margin: 0px 15px;
+}
 
-h4 {
+h2 {
   font-family: 'Spectral', serif !important;
 }
 
 nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 20px 20px;
 }
