@@ -59,8 +59,10 @@ export default function SignUp({ handleSignup }) {
             onChange={handleChange}
           />
         </div>
-
+        <br/>
+        <div>
         <button>SUBMIT</button>
+        </div>
 
       </form>
     </div>
