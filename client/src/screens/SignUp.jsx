@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../assets/signup.css'
 
 
 export default function SignUp({ handleSignup }) {
@@ -19,45 +20,49 @@ export default function SignUp({ handleSignup }) {
 
   return (
     <div>
-      <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handleSignup(formData);
-      }}
-    >
       <h3>SIGN UP</h3>
-      <label>
-        Username:
-        <input
-          type='text'
-          name='username'
-          value={username}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        Email:
-        <input
-          type='text'
-          name='email'
-          value={email}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        Password:
-        <input
-          type='password'
-          name='password'
-          value={password}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <button>SUBMIT</button>
-    </form>
+
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSignup(formData);
+        }}
+      >
+        <div className='signup-form-contain'>
+          <span className='slable'>
+            USERNAME
+          </span><br/>
+          <input
+            type='text'
+            name='username'
+            value={username}
+            onChange={handleChange}
+          />
+          <br />
+          <span className='slable'>
+            EMAIL
+          </span><br/>
+          <input
+            type='text'
+            name='email'
+            value={email}
+            onChange={handleChange}
+          />
+          <br />
+          <span className='slable'>
+            PASSWORD
+          </span><br/>
+          <input
+            type='password'
+            name='password'
+            value={password}
+            onChange={handleChange}
+          />
+        </div>
+
+        <button>SUBMIT</button>
+
+      </form>
     </div>
   )
 }

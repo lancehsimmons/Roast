@@ -42,7 +42,7 @@ export default function SignIn({ handleSignIn }) {
 
         <div className='input-div'>
           <span className='slable'>
-            username
+            USERNAME
           </span><br />
           <input
             type='text'
@@ -53,7 +53,7 @@ export default function SignIn({ handleSignIn }) {
 
           <br />
           <span className='slable'>
-            password
+            PASSWORD
           </span><br />
           <input
             type='password'
