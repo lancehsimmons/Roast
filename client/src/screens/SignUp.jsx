@@ -21,12 +21,6 @@ export default function SignUp({ handleSignup }) {
   return (
     <div>
 
-      <Link to='/'>
-      <div>
-        <button>HOME</button>
-        </div>
-        </Link>
-
       <div className='signup-title-div'>
         <h3>SIGN UP</h3>
       </div>
@@ -72,6 +66,11 @@ export default function SignUp({ handleSignup }) {
         <div>
           <button>SUBMIT</button>
         </div>
+
+        <Link to='/'>
+        <button className='home-button'>HOME</button>
+      </Link>
+
 
         <div className='roaster-div'>
           <img className='roaster' src='./images/roast_signup.png' alt='alchemist roasting coffee' />
