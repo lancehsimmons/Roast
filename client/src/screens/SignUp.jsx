@@ -19,9 +19,9 @@ export default function SignUp({ handleSignup }) {
 
   return (
     <div>
-      
+
       <div className='signup-title-div'>
-      <h3>SIGN UP</h3>
+        <h3>SIGN UP</h3>
       </div>
 
       <form
@@ -33,7 +33,7 @@ export default function SignUp({ handleSignup }) {
         <div className='signup-form-contain'>
           <span className='slable'>
             USERNAME
-          </span><br/>
+          </span><br />
           <input
             type='text'
             name='username'
@@ -43,7 +43,7 @@ export default function SignUp({ handleSignup }) {
           <br />
           <span className='slable'>
             EMAIL
-          </span><br/>
+          </span><br />
           <input
             type='text'
             name='email'
@@ -53,7 +53,7 @@ export default function SignUp({ handleSignup }) {
           <br />
           <span className='slable'>
             PASSWORD
-          </span><br/>
+          </span><br />
           <input
             type='password'
             name='password'
@@ -61,9 +61,13 @@ export default function SignUp({ handleSignup }) {
             onChange={handleChange}
           />
         </div>
-        <br/>
+        <br />
         <div>
-        <button>SUBMIT</button>
+          <button>SUBMIT</button>
+        </div>
+
+        <div className='roaster-div'>
+          <img className='roaster' src='./images/roast_signup.png' alt='alchemist roasting coffee' />
         </div>
 
       </form>

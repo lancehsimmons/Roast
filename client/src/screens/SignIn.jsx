@@ -18,7 +18,6 @@ export default function SignIn({ handleSignIn }) {
   };
   return (
     <div>
-      {/* <div className="logo-div"> */}
         <img src='./images/roast_logo.png' alt='roast logo, a coffee alchemist' className='logo' />
 
 
