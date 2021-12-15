@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import '../assets/signup.css'
 
-
 export default function SignUp({ handleSignup }) {
   const [formData, setFormData] = useState({
     username: '',
@@ -20,6 +19,7 @@ export default function SignUp({ handleSignup }) {
 
   return (
     <div>
+      
       <h3>SIGN UP</h3>
 
       <form
