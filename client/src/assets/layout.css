@@ -1,3 +1,8 @@
+.nav-div {
+  display: flex;
+  justify-content: center;
+}
+
 .logo2 {
   height: 250px;
 }
@@ -10,6 +15,7 @@ h2 {
   font-family: 'Spectral', serif !important;
 }
 
+
 nav {
   display: flex;
   flex-direction: column;
@@ -19,7 +25,7 @@ nav {
 }
 
 .nav-item {
-  margin: 0px 15px;
+  margin: 10px 15px;
 }
 
 .nav-item h3 {
@@ -29,6 +35,9 @@ nav {
 @media (min-width: 500px){
   nav {
     flex-direction: row;
+  }
+  .nav-item{
+    margin: 0px 15px;
   }
  
   }
