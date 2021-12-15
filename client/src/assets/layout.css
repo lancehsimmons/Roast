@@ -15,4 +15,13 @@ nav {
   flex-direction: row;
   align-items: center;
   padding: 20px 20px;
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  margin: 0px 15px;
+}
+
+.nav-item h3 {
+  margin: 0;
 }

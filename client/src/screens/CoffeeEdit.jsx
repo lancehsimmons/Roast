@@ -66,77 +66,6 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
 
   return (
     <div>
-      <h3>Edit Your Roast</h3>
-      {/* <form
-      onSubmit={(e) => {
-          e.preventDefault()
-        handleCoffeeUpdate(id, formData)
-      }}
-    > */}
-
-      {/* <label>
-        Name:
-        <input type='text' name='name' value={name} onChange={handleChange} />
-        </label>
-        <br/>
-        <label>
-        Roast Time:
-        <input type='text' name='roast_time' value={roast_time} onChange={handleChange} />
-        </label> */}
-      {/* <br/>
-        <label>
-        Roast Level:
-        <input type='text' name='roast_level' value={roast_level} onChange={handleChange} />
-        </label>
-        <br/> */}
-      {/* <label>
-        Roaster Settings:
-        <input type='text' name='roaster_settings' value={roaster_settings} onChange={handleChange} />
-        </label>
-        <br/> */}
-      {/* <label>
-        Preheat Time/Temp:
-        <input type='text' name='preheat' value={preheat} onChange={handleChange} />
-        </label> */}
-      {/* <br/>
-        <label>
-        Yellowing:
-        <input type='text' name='yellowing' value={yellowing} onChange={handleChange} />
-        </label> */}
-      {/* <br/>
-        <label>
-        Browning:
-        <input type='text' name='browning' value={browning} onChange={handleChange} />
-        </label> */}
-      {/* <br/>
-        <label>
-        First Crack:
-        <input type='text' name='first_crack' value={first_crack} onChange={handleChange} />
-        </label> */}
-      {/* <br/>
-        <label>
-        Second Crack:
-        <input type='text' name='second_crack' value={second_crack} onChange={handleChange} />
-        </label> */}
-      {/* <br/>
-        <label>
-        First Crack Ends:
-        <input type='text' name='first_crack_end' value={first_crack_end} onChange={handleChange} />
-        </label> */}
-      <br />
-      {/* <label>
-        End/Drop:
-        <input type='text' name='end_drop' value={end_drop} onChange={handleChange} />
-        </label>
-        <br/>
-        <label>
-        Notes:
-        <input type='text' name='notes' value={notes} onChange={handleChange} />
-        </label> */}
-      {/* <br />
-          <button>Submit</button>
-      </form> */}
-
       <div className='card-contain'>
         
           <form
@@ -146,7 +75,7 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
             }}
           >
             <button className='edit-submit-button'>SUBMIT EDIT</button>
-            <div className='detail-div'>
+            <div className='detail-div' className='edit-card-div'>
             <div className='list-title'>
               <div><h5>COFFEE</h5></div>
               <div className='date-div'>
@@ -206,9 +135,6 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
           </form>
       </div>
       {/* table formatting from https://divtable.com/generator/ */}
-
-
-
     </div>
   )
 }

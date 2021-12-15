@@ -24,12 +24,12 @@ export default function Layout({ currentUser, handleLogout, children }) {
               <h2 className='welcome'>welcome, {currentUser.username}</h2>
             </div>
     
-            <div onClick={handleLogout}>Logout
+            <div className='nav-item' onClick={handleLogout}><h3>Logout</h3>
             </div>
     
-            <div>
+            <div className='nav-item'>
               <NavLink to='/'>
-                <div>Home</div>
+                <h3>Home</h3>
               </NavLink>
             </div>
           </nav>
