@@ -1,4 +1,14 @@
+.logo2 {
+  height: 250px;
+}
+
 
 h4 {
   font-family: 'Spectral', serif !important;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px;
 }

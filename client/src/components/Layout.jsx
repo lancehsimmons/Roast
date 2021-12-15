@@ -18,10 +18,9 @@ export default function Layout({ currentUser, handleLogout, children }) {
       break
     case '/' || '/coffees/' || '/add-roast':
       navOptions = <>
-        <img src='../images/roast_logo2.png' alt='a coffee alchemist' />
-        logged in
         {currentUser &&
         <>
+        <img className='logo2' src='../images/roast_logo2.png' alt='a coffee alchemist' />
           <nav>
             <div>
               <h4 className='welcome'>welcome, {currentUser.username}</h4>
