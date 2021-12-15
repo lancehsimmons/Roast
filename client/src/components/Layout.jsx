@@ -4,21 +4,53 @@ import '../assets/layout.css'
 
 
 
+
+
+
 export default function Layout({ currentUser, handleLogout, children }) {
   const location = useLocation()
 
+
+  let navOptions
+  switch (location.pathname) {
+    case '/' || '/sign-in':
+      navOptions = <></>
+      break
+    case '/coffees/' || '/add-roast':
+      navOptions = <>logged in</>
+      break
+    case '/sign-up':
+      navOptions = <>
+        <NavLink to='/'>
+          <div>Home</div>
+        </NavLink>
+        logged out</>
+  }
+  
+  
+
+
+
   return (
     <div>
+      <>{navOptions}</>
       <Link to='/'>
       </Link>
       {currentUser &&
         <>
           <nav>
-            <h4 className='welcome'>welcome, {currentUser.username}</h4>
-            <div onClick={handleLogout}>Logout</div>
-            <NavLink to='/'>
-              <div>Home</div>
-            </NavLink>
+            <div>
+              <h4 className='welcome'>welcome, {currentUser.username}</h4>
+            </div>
+
+            <div onClick={handleLogout}>Logout
+            </div>
+
+            <div>
+              <NavLink to='/'>
+                <div>Home</div>
+              </NavLink>
+            </div>
           </nav>
         </>
       }
