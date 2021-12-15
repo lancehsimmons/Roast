@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../assets/signup.css'
 
 export default function SignUp({ handleSignup }) {
@@ -19,6 +20,12 @@ export default function SignUp({ handleSignup }) {
 
   return (
     <div>
+
+      <Link to='/'>
+      <div>
+        <button>HOME</button>
+        </div>
+        </Link>
 
       <div className='signup-title-div'>
         <h3>SIGN UP</h3>
