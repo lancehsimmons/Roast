@@ -2,13 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import '../assets/layout.css'
 
-
-
-
-
-
 export default function Layout({ currentUser, handleLogout, children }) {
-
   return (
     <div>
       <>
@@ -21,7 +15,7 @@ export default function Layout({ currentUser, handleLogout, children }) {
                 </NavLink>
 
 
-                <div classname='welcome-div'>
+                <div className='welcome-div'>
                   <h2 className='welcome'>Welcome, {currentUser.username}</h2>
                 </div>
 

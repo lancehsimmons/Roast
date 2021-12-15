@@ -37,20 +37,6 @@ export default function CoffeeDetail({ currentUser }) {
           <p>{coffee?.name}</p>
           <hr />
 
-          <div className='key-val-div'>
-            {/* <p>Roast Time:    {coffee?.roast_time}</p>
-            <p>Roast Level:    {coffee?.roast_level}</p>
-            <p>Roaster Settings:    {coffee?.roaster_settings}</p> */}
-            {/* <p>Preheat Time/Temp:    {coffee?.preheat}</p> */}
-            {/* <p>Yellowing:    {coffee?.yellowing}</p> */}
-            {/* <p>Browning:    {coffee?.browning}</p> */}
-            {/* <p>First Crack:    {coffee?.first_crack}</p> */}
-            {/* <p>Second Crack:    {coffee?.second_crack}</p> */}
-            {/* <p>First Crack Ends:    {coffee?.first_crack_end}</p> */}
-            {/* <p>End/Drop:    {coffee?.end_drop}</p> */}
-            {/* <p>Notes:    {coffee?.notes}</p> */}
-          </div>
-
           <div class="divTable">
             <div class="divTableBody">
               <div class="divTableRow">
