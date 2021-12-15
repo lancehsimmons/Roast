@@ -15,7 +15,6 @@ h2 {
   font-family: 'Spectral', serif !important;
 }
 
-
 nav {
   display: flex;
   flex-direction: column;
@@ -35,15 +34,12 @@ nav {
   nav {
     flex-direction: row;
   }
-
- .nav-div{
+ .nav-div {
    justify-content: space-evenly;
  }
-
   .nav-item{
     margin: 0px 15px;
   }
- 
   }
 
   @media (min-width: 700px){

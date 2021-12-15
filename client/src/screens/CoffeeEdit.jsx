@@ -75,7 +75,7 @@ export default function CoffeeEdit({ coffees, handleCoffeeUpdate }) {
             }}
           >
             <button className='edit-submit-button'>SUBMIT EDIT</button>
-            <div className='detail-div' className='edit-card-div'>
+            <div className='edit-card-div'>
             <div className='list-title'>
               <div><h5>COFFEE</h5></div>
               <div className='date-div'>
