@@ -17,7 +17,9 @@ export default function Layout({ currentUser, handleLogout, children }) {
       navOptions = <></>
       break
     case '/coffees/' || '/add-roast':
-      navOptions = <>logged in</>
+      navOptions = <>
+        <img src='/assets/images/roast_logo2' alt='a coffee alchemist' />
+        logged in</>
       break
     case '/sign-up':
       navOptions = <>
@@ -26,10 +28,6 @@ export default function Layout({ currentUser, handleLogout, children }) {
         </NavLink>
         logged out</>
   }
-  
-  
-
-
 
   return (
     <div>
