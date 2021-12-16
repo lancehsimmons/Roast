@@ -7,7 +7,7 @@ import CoffeeEdit from '../screens/CoffeeEdit'
 import { getAllCoffees, postCoffee, putCoffee, deleteCoffee } from '../services/coffee'
 
 
-export default function MainContainer({ currentUser, setCurrentUser }) {
+export default function MainContainer({ currentUser}) {
   const [coffees, setCoffees] = useState([])
   const history = useHistory()
 
