@@ -106,22 +106,22 @@ src
       
 #### Time Estimates
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Rails setup   |    H     |     1 hrs      |      30min   |     hrs     |
-| scaffolding   |    H     |     1 hrs      |      1hrs    |     TBD     |
-| associations  |    H     |     1 hrs      |      30min   |     TBD     |
-| controllers/routes |  H  |     5 hrs      |      2hrs    |     TBD     |
-| testing CRUD  |    H     |     3 hrs      |      3hrs    |     TBD     |
-| React setup   |    H     |     1 hrs      |      1hrs    |     TBD     |
-| file structuring |    H  |     1 hrs      |      1hrs    |     TBD     |
-| auth          |    L     |     3 hrs      |      8hrs    |     TBD     |
-| CRUD          |    H     |     3 hrs      |      8hrs    |     TBD     |
-| testing routes |    H    |     3 hrs      |      3hrs    |     TBD     |
-| basic layout  |    H     |     6 hrs      |      4hrs    |     TBD     |  
-| basic css     |    H     |     5 hrs      |      12hrs   |     TBD     |
-| refining css  |    H     |     4 hrs      |      5hrs    |     TBD     |
-| TOTAL         |    H     |     39 hrs     |      49hrs   |     TBD     |
+| Task                | Priority | Estimated Time | Time Spent | 
+| ------------------- | :------: | :------------: | :-----------: | 
+| Rails setup   |    H     |     1 hrs      |      30min   |
+| scaffolding   |    H     |     1 hrs      |      1hrs    |
+| associations  |    H     |     1 hrs      |      30min   |
+| controllers/routes |  H  |     5 hrs      |      2hrs    |
+| testing CRUD  |    H     |     3 hrs      |      3hrs    |
+| React setup   |    H     |     1 hrs      |      1hrs    |
+| file structuring |    H  |     1 hrs      |      1hrs    |
+| auth          |    L     |     3 hrs      |      8hrs    |
+| CRUD          |    H     |     3 hrs      |      8hrs    |
+| testing routes |    H    |     3 hrs      |      3hrs    |
+| basic layout  |    H     |     6 hrs      |      4hrs    |
+| basic css     |    H     |     5 hrs      |      12hrs   |
+| refining css  |    H     |     4 hrs      |      5hrs    |
+| TOTAL         |    H     |     39 hrs     |      49hrs   |
 
 
 <br>
