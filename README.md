@@ -143,6 +143,34 @@ src
 ***
 
 ## Code Showcase
+Getting Redirect to correctly render home or sign-in based on user login state was a challenge! 
+Working with another student we figured out that we needed a ternary on both Redirects to cover all the bases.
+
+```
+    <div className="App">
+      <Layout handleLogout={handleLogout} currentUser={currentUser}>
+        <Switch>
+          <Route path='/sign-up'>
+            <SignUp handleSignup={handleSignup} />
+          </Route>
+
+          <Route path='/sign-in'>
+          {currentUser ?
+              <Redirect to='/' />
+              : <SignIn handleSignIn={handleSignIn} />
+            }
+          </Route>
+          <Route path='/'>
+          {currentUser ?
+              <MainContainer currentUser={currentUser} handleSignIn={handleSignIn} />
+              : <Redirect to='/sign-in' />
+            }
+          </Route>
+        </Switch>
+      </Layout>
+    </div>
+  );
+  ```
 
 
 ## Code Issues & Resolutions
