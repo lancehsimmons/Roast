@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom'
 import '../assets/list.css'
 
 export default function List({ coffees, handleCoffeeDelete }) {
-  // Date.prototype.getDateWithoutTime = function () {
-  //   return new Date(this.toDateString());
-  // }
 
   return (
     <div>
