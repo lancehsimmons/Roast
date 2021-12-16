@@ -52,7 +52,7 @@ Roast will provide the user base with a full CRUD browser application. The app w
 
 
 #### Component Tree
-![Roast Component Tree](https://user-images.githubusercontent.com/90333715/145629736-e5ced02b-4660-49d7-9953-e8249959b17d.png)
+![Roast Component Tree](https://user-images.githubusercontent.com/90333715/146286298-cf7af3b0-db40-465a-a4cb-e8287f548bf2.png)
 
 
 #### Component Architecture
