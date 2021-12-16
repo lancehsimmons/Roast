@@ -18,8 +18,9 @@ export default function SignIn({ handleSignIn }) {
   };
   return (
     <div>
+        <img src='./images/roast_logo.png' alt='roast logo, a coffee alchemist' className='logo' />
 
-      <h1>OAST</h1>
+
       <div>
         <h3 className='tagline'>Perfect your Home Roasts</h3>
       </div>
@@ -35,14 +36,14 @@ export default function SignIn({ handleSignIn }) {
         <div className='sign-in-label-flex-contain'>
           <div className='sign-in-label-div'>
             <div className='sign-in-text-div'>
-            <h5>SIGN IN</h5>
+              <h5>SIGN IN</h5>
             </div>
           </div>
         </div>
 
         <div className='input-div'>
           <span className='slable'>
-            username
+            USERNAME
           </span><br />
           <input
             type='text'
@@ -53,7 +54,7 @@ export default function SignIn({ handleSignIn }) {
 
           <br />
           <span className='slable'>
-            password
+            PASSWORD
           </span><br />
           <input
             type='password'

@@ -1,27 +1,37 @@
 import React from 'react'
-import { NavLink, Link, useLocation } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import '../assets/layout.css'
 
-
-
 export default function Layout({ currentUser, handleLogout, children }) {
-  const location = useLocation()
-
   return (
     <div>
-      <Link to='/'>
-      </Link>
-      {currentUser &&
-        <>
-          <nav>
-            <h4 className='welcome'>welcome, {currentUser.username}</h4>
-            <div onClick={handleLogout}>Logout</div>
-            <NavLink to='/'>
-              <div>Home</div>
-            </NavLink>
-          </nav>
-        </>
-      }
+      <>
+        {currentUser ?
+          <>
+            <div className='nav-div'>
+              <nav>
+                <NavLink to='/'>
+                  <img className='logo2' src='../images/roast_logo2.png' alt='a coffee alchemist' />
+                </NavLink>
+
+
+                <div className='welcome-div'>
+                  <h2 className='welcome'>Welcome, {currentUser.username}</h2>
+                </div>
+
+                <div className='nav-item out-button' onClick={handleLogout}><h3>Logout</h3>
+                </div>
+
+                <div className='nav-item'>
+                  <NavLink to='/'>
+                    <h3>Home</h3>
+                  </NavLink>
+                </div>
+              </nav>
+            </div>
+          </> :
+          null}
+      </>
       {children}
     </div>
   )

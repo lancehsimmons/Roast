@@ -23,12 +23,12 @@ code {
 }
 
 input {
-  background-color: #FFF1E2;
+  background-color: #FFE6CF;
   border: none;
   border-radius: 3px;
   display: inline-block;
   margin: 0px 0px 10px 0px;
-  height: 25px;
+  height: 27px;
   width: 200px
 }
 
@@ -40,7 +40,19 @@ button {
   background-color: #C3793C;
   border: none;
   border-radius: 4px;
-  color: #FFF1E2;
+  color: #FFE6CF;
   height: 25px;
   padding: 1px 6px 0px 6px;
+}
+
+textarea {
+  background-color: #FFE6CF;
+  border: none;
+  border-radius: 4px;
+  width: 75vw;
+  height: 75px;
+}
+
+nav {
+  display: inline-block
 }

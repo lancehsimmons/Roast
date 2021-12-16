@@ -40,8 +40,7 @@ export default function AddRoast({ handleAddRoast }) {
   }
 
   return (
-    <div>
-      <h1>add a roast here</h1>
+    <div className='add-body'>
       <form
         onSubmit={(e) => {
           e.preventDefault()
@@ -50,78 +49,102 @@ export default function AddRoast({ handleAddRoast }) {
       >
         <button className='save-button'>SAVE ROAST</button>
 
-        <div>
-        <span className='slable'>
-          COFFEE
-        </span><br />
-        <input type='text' name='name' value={name} onChange={handleChange} />
-        <br />
-        <span className='slable'>
-          ROAST TIME
-        </span><br />
-        <input type='text' name='roast_time' value={roast_time} onChange={handleChange} />
-        <br />
+        <div className='add-table'>
 
-        <span className='slable'>
-          ROAST LEVEL
-        </span><br />
-        <input type='text' name='roast_level' value={roast_level} onChange={handleChange} />
+          <div className='field-div'>
+            <label className='slable'>
+              COFFEE
+            </label>
+            <input type='text' name='name' value={name} onChange={handleChange} />
+          </div>
 
-        <br />
-        <span className='slable'>
-          ROASTER SETTINGS
-        </span><br />
-        <input type='text' name='roaster_settings' value={roaster_settings} onChange={handleChange} />
+          <div className='two-column'>
+            <div className='field-div cc'>
+              <label className='slable'>
+                ROAST TIME
+              </label>
+              <input type='text' name='roast_time' value={roast_time} onChange={handleChange} />
+            </div>
 
-        <br />
-        <span className='slable'>
-          PREHEAT TIME/TEMP
-        </span><br />
-        <input type='text' name='preheat' value={preheat} onChange={handleChange} />
+            <div className='field-div cc'>
+                <label className='slable'>
+                  ROAST LEVEL
+                </label>
+                <input type='text' name='roast_level' value={roast_level} onChange={handleChange} />
+            </div>
+          </div>
 
-        <br />
-        <span className='slable'>
-          YELLOWING
-        </span><br />
-        <input type='text' name='yellowing' value={yellowing} onChange={handleChange} />
-        <br />
+          <div className='field-div'>
+            <label className='slable'>
+              ROASTER SETTINGS
+            </label>
+            <input type='text' name='roaster_settings' value={roaster_settings} onChange={handleChange} />
+          </div>
 
-        <span className='slable'>
-          BROWNING
-        </span><br />
-        <input type='text' name='browning' value={browning} onChange={handleChange} />
-        <br />
+          <div className='field-div'>
+            <label className='slable'>
+              PREHEAT TIME/TEMP
+            </label>
+            <input type='text' name='preheat' value={preheat} onChange={handleChange} />
+          </div>
 
-        <span className='slable'>
-          FIRST CRACK
-        </span><br />
-        <input type='text' name='first_crack' value={first_crack} onChange={handleChange} />
-        <br />
+          <div className='two-column'>
+          <div className='field-div cc'>
+            <label className='slable'>
+              YELLOWING
+            </label>
+            <input type='text' name='yellowing' value={yellowing} onChange={handleChange} />
+          </div>
+          <div/>
 
-        <span className='slable'>
-          SECOND CRACK
-        </span><br />
-        <input type='text' name='second_crack' value={second_crack} onChange={handleChange} />
-        <br />
+          <div className='field-div cc'>
+            <label className='slable'>
+              BROWNING
+            </label>
+            <input type='text' name='browning' value={browning} onChange={handleChange} />
+            </div >
+            </div>
 
-        <span className='slable'>
-          FIRST CRACK ENDS
-        </span><br />
-        <input type='text' name='first_crack_end' value={first_crack_end} onChange={handleChange} />
-        <br />
+          <div className='two-column'>
+          <div className='field-div cc'>
+            <label className='slable'>
+              FIRST CRACK
+            </label>
+            <input type='text' name='first_crack' value={first_crack} onChange={handleChange} />
+          </div>
 
-        <span className='slable'>
-          END/DROP
-        </span><br />
-        <input type='text' name='end_drop' value={end_drop} onChange={handleChange} />
-        <br />
+          <div className='field-div cc'>
+            <label className='slable'>
+              SECOND CRACK
+            </label>
+            <input type='text' name='second_crack' value={second_crack} onChange={handleChange} />
+            </div>
+            </div>
 
-        <span className='slable'>
-          NOTES
-        </span><br />
-        <input type='text' name='notes' value={notes} onChange={handleChange} />
+          <div className='two-column'>
+          <div className='field-div cc'>
+            <label className='slable'>
+              FIRST CRACK ENDS
+            </label>
+            <input type='text' name='first_crack_end' value={first_crack_end} onChange={handleChange} />
+          </div>
+
+          <div className='field-div cc'>
+            <label className='slable'>
+              END/DROP
+            </label>
+            <input type='text' name='end_drop' value={end_drop} onChange={handleChange} />
+            </div>
+            </div>
+
+          <div className='field-div'>
+            <label className='slable'>
+              NOTES
+            </label>
+            <textarea className='add-notes' type='text' name='notes' value={notes} onChange={handleChange} />
+          </div>
         </div>
-        <br />
+        
       </form>
     </div>
   )

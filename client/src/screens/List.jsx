@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import '../assets/list.css'
 
 export default function List({ coffees, handleCoffeeDelete }) {
-  Date.prototype.getDateWithoutTime = function () {
-    return new Date(this.toDateString());
-  }
+  // Date.prototype.getDateWithoutTime = function () {
+  //   return new Date(this.toDateString());
+  // }
 
   return (
     <div>
@@ -15,7 +15,7 @@ export default function List({ coffees, handleCoffeeDelete }) {
 
       <div className='list-div'>
         {coffees.map((coffee) =>
-          <div className="list-one-div">
+          <div className="list-one-div" key={coffee.id}>
             <div className='list-title'>
 
               <div><h5>COFFEE</h5></div>
@@ -42,5 +42,3 @@ export default function List({ coffees, handleCoffeeDelete }) {
     </div>
   )
 }
-
-// {Date(coffee.created_at).toDateString()}
