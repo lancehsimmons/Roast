@@ -1,5 +1,7 @@
 ## Roast
 
+https://roast-lancedev.surge.sh/
+
 A full-stack home coffee roasting journal. Built with Ruby on Rails and React.
 
 Roast aims to provide a dynamic, precise, and robust log for home coffee roasting. Perfecting roasts on your favorite beans is a laborious process. I've created Roast to give home-roasters the tools they need to achieve the ideal bean.
@@ -104,22 +106,22 @@ src
       
 #### Time Estimates
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Rails setup   |    H     |     1 hrs      |      30min   |     hrs     |
-| scaffolding   |    H     |     1 hrs      |      1hrs    |     TBD     |
-| associations  |    H     |     1 hrs      |      30min   |     TBD     |
-| controllers/routes |  H  |     5 hrs      |      2hrs    |     TBD     |
-| testing CRUD  |    H     |     3 hrs      |      3hrs    |     TBD     |
-| React setup   |    H     |     1 hrs      |      1hrs    |     TBD     |
-| file structuring |    H  |     1 hrs      |      1hrs    |     TBD     |
-| auth          |    L     |     3 hrs      |      8hrs    |     TBD     |
-| CRUD          |    H     |     3 hrs      |      8hrs    |     TBD     |
-| testing routes |    H    |     3 hrs      |      3hrs    |     TBD     |
-| basic layout  |    H     |     6 hrs      |      4hrs    |     TBD     |  
-| basic css     |    H     |     5 hrs      |      12hrs   |     TBD     |
-| refining css  |    H     |     4 hrs      |      5hrs    |     TBD     |
-| TOTAL         |    H     |     39 hrs     |      49hrs   |     TBD     |
+| Task                | Priority | Estimated Time | Time Spent | 
+| ------------------- | :------: | :------------: | :-----------: | 
+| Rails setup   |    H     |     1 hrs      |      30min   |
+| scaffolding   |    H     |     1 hrs      |      1hrs    |
+| associations  |    H     |     1 hrs      |      30min   |
+| controllers/routes |  H  |     5 hrs      |      2hrs    |
+| testing CRUD  |    H     |     3 hrs      |      3hrs    |
+| React setup   |    H     |     1 hrs      |      1hrs    |
+| file structuring |    H  |     1 hrs      |      1hrs    |
+| auth          |    L     |     3 hrs      |      8hrs    |
+| CRUD          |    H     |     3 hrs      |      8hrs    |
+| testing routes |    H    |     3 hrs      |      3hrs    |
+| basic layout  |    H     |     6 hrs      |      4hrs    |
+| basic css     |    H     |     5 hrs      |      12hrs   |
+| refining css  |    H     |     4 hrs      |      5hrs    |
+| TOTAL         |    H     |     39 hrs     |      49hrs   |
 
 
 <br>
@@ -142,6 +144,59 @@ src
 
 ## Code Showcase
 
+I love using the Faker gem. Setting my form to autofill with Faker was fun.
+```
+7.times do 
+  Coffee.create!(
+    name: Faker::Coffee.origin,
+    roast_time: "#{rand(9..12)}:00",
+    roast_level: 'city',
+    roaster_settings: '9.9.20',
+    preheat: '1 min 9 heat',
+    yellowing: "#{rand(3..5)}:00",
+    browning: "#{rand(5..7)}:00",
+    first_crack: "#{rand(7..9)}:00",
+    second_crack: "#{rand(9..11)}:00",
+    first_crack_end: "#{rand(7..11)}:00",
+    end_drop: "#{rand(9..12)}:00",
+    notes: "fan #{rand(5..7)} at #{rand(3..5)}:00, heat to #{rand(7..9)} at #{rand(7..9)}:00",
+    user: @admin)
+end
+
+puts "#{Coffee.count} coffees created"
+```
+
+
 
 ## Code Issues & Resolutions
+
+Getting Redirect to correctly render home or sign-in based on user login state was a challenge! 
+Working with another student we figured out that we needed a ternary on both Redirects to cover all the bases.
+
+```
+    <div className="App">
+      <Layout handleLogout={handleLogout} currentUser={currentUser}>
+        <Switch>
+          <Route path='/sign-up'>
+            <SignUp handleSignup={handleSignup} />
+          </Route>
+
+          <Route path='/sign-in'>
+          {currentUser ?
+              <Redirect to='/' />
+              : <SignIn handleSignIn={handleSignIn} />
+            }
+          </Route>
+          <Route path='/'>
+          {currentUser ?
+              <MainContainer currentUser={currentUser} handleSignIn={handleSignIn} />
+              : <Redirect to='/sign-in' />
+            }
+          </Route>
+        </Switch>
+      </Layout>
+    </div>
+  );
+  ```
+
 
