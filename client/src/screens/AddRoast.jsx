@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import '../assets/addroast.css'
+import Stopwatch from '../components/Stopwatch';
 
 export default function AddRoast({ handleAddRoast }) {
   const [formData, setFormData] = useState({
@@ -41,6 +42,8 @@ export default function AddRoast({ handleAddRoast }) {
 
   return (
     <div className='add-body'>
+      <Stopwatch/>
+
       <form
         onSubmit={(e) => {
           e.preventDefault()
