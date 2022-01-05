@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import '../assets/stopwatch.css'
 
-export default function Stopwatch() {
-  const [time, setTime] = useState(0)
+export default function Stopwatch({time, setTime}) {
   const [start, setStart] = useState(false)
 
   useEffect(() => {

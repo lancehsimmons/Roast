@@ -32,6 +32,9 @@ export default function AddRoast({ handleAddRoast }) {
     notes,
   } = formData;
 
+  const [time, setTime] = useState(0)
+
+
   const handleChange = (e) => {
     const { name, value } = e.target
     setFormData((prevState) => ({
@@ -42,7 +45,9 @@ export default function AddRoast({ handleAddRoast }) {
 
   return (
     <div className='add-body'>
-      <Stopwatch/>
+      <Stopwatch
+        time={time}
+        setTime={setTime}/>
 
       <form
         onSubmit={(e) => {
