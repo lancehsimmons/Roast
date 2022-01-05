@@ -1,0 +1,12 @@
+.display {
+  width: 40%;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digit {
+  margin: 2px 2px;
+  font-family: monospace;
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../assets/stopwatch.css'
 
 export default function Stopwatch() {
   const [time, setTime] = useState(0)
@@ -20,15 +21,19 @@ export default function Stopwatch() {
 
   return (
     <div>
-      <div>
-        <h1>
-          <span>{('0' + Math.floor((time / 60000) % 60)).slice(-2)} </span>
-          <span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)} </span>
-          <span>{('0' + (time / 10) % 1000).slice(-2)} </span>
-        </h1>
+      <div className='display'>
+        <div>
+          <span className='digit'>{('0' + Math.floor((time / 60000) % 60)).slice(-2)} </span>
+          <span className='digit'>{('0' + Math.floor((time / 1000) % 60)).slice(-2)} </span>
+          <span className='digit'>{('0' + (time / 10) % 1000).slice(-2)} </span>
+        </div>
       </div>
       <div>
-        <button onClick={() => setStart((true))}>START</button>
+        <div><button onClick={() => setStart((true))}>START</button>
+        </div>
+        <div>
+
+        </div>
         <button onClick={() => setStart((false))}>STOP</button>
         <button onClick={() => {setTime(0); setStart(false)}}>RESET</button>
       </div>
