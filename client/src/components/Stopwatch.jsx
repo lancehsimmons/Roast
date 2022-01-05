@@ -10,7 +10,7 @@ export default function Stopwatch() {
 
     if (start) {
       interval = setInterval(() => {
-        setTime(prevTime => prevTime +10)
+        setTime(prevTime => prevTime + 10)
       }, 10)
     } else {
       clearInterval(interval)
@@ -20,22 +20,18 @@ export default function Stopwatch() {
   }, [start])
 
   return (
-    <div>
+    <div className='stopwatch'>
       <div className='display'>
-        <div>
-          <span className='digit'>{('0' + Math.floor((time / 60000) % 60)).slice(-2)} </span>
-          <span className='digit'>{('0' + Math.floor((time / 1000) % 60)).slice(-2)} </span>
+        <h1>
+          <span className='digit'>{('0' + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
+          <span className='digit'>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}.</span>
           <span className='digit'>{('0' + (time / 10) % 1000).slice(-2)} </span>
-        </div>
+        </h1>
       </div>
-      <div>
-        <div><button onClick={() => setStart((true))}>START</button>
-        </div>
-        <div>
-
-        </div>
-        <button onClick={() => setStart((false))}>STOP</button>
-        <button onClick={() => {setTime(0); setStart(false)}}>RESET</button>
+      <div className='sw-buttons'>
+        <button className='sw-button' onClick={() => setStart((true))}>START</button>
+        <button className='sw-button' onClick={() => setStart((false))}>STOP</button>
+        <button className='sw-button' onClick={() => { setTime(0); setStart(false) }}>RESET</button>
       </div>
     </div>
   )
