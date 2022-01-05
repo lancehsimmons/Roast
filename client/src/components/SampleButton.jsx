@@ -4,10 +4,10 @@
 
 import React from 'react'
 
-export default function WatchSampleButton() {
+export default function SampleButton() {
   return (
     <div>
-      
+      <button>SAMPLE</button>
     </div>
   )
 }
