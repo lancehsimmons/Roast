@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import '../assets/addroast.css'
-import Stopwatch from '../components/Stopwatch';
+import Stopwatch from '../components/Stopwatch'
+import SampleButton from '../components/SampleButton'
 
 export default function AddRoast({ handleAddRoast }) {
   const [formData, setFormData] = useState({
@@ -101,7 +102,11 @@ export default function AddRoast({ handleAddRoast }) {
             <label className='slable'>
               YELLOWING
             </label>
-            <input type='text' name='yellowing' value={yellowing} onChange={handleChange} />
+              <input type='text' name='yellowing' value={yellowing} onChange={handleChange} />
+              <SampleButton
+                name={'yellowing'}
+                setformData={setFormData}
+              time={time}/>
           </div>
           <div/>
 
