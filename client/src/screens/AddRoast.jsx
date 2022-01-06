@@ -51,7 +51,8 @@ export default function AddRoast({ handleAddRoast }) {
     console.log(name)
     setFormData((prevState) => ({
       ...prevState,
-      [name]: time,
+      [name]: 
+      `${Math.floor((time / 60000) % 60)}:${Math.floor((time / 1000) % 60)}.${(time / 10) % 100}`,
     }))
   }
 
