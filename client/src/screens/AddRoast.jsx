@@ -113,11 +113,11 @@ export default function AddRoast({ handleAddRoast }) {
             <label className='slable'>
               YELLOWING
             </label>
-              <input type='text' name='yellowing' value={yellowing} onChange={handleChange} />
               <SampleButton
                 name={'yellowing'}
                 handleSample={handleSample}
-              time={time}/>
+              />
+              <input type='text' name='yellowing' value={yellowing} onChange={handleChange} />
           </div>
           <div/>
 
@@ -125,7 +125,11 @@ export default function AddRoast({ handleAddRoast }) {
             <label className='slable'>
               BROWNING
             </label>
-            <input type='text' name='browning' value={browning} onChange={handleChange} />
+              <SampleButton
+                name={'browning'}
+                handleSample={handleSample}
+              />
+              <input type='text' name='browning' value={browning} onChange={handleChange} />
             </div >
             </div>
 
