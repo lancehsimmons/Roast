@@ -44,6 +44,17 @@ export default function AddRoast({ handleAddRoast }) {
     }))
   }
 
+  const handleSample = (e) => {
+    e.preventDefault();
+    // setFormData({name: `${time}`})
+    const { name } = e.target
+    console.log(name)
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: time,
+    }))
+  }
+
   return (
     <div className='add-body'>
       <Stopwatch
@@ -105,7 +116,7 @@ export default function AddRoast({ handleAddRoast }) {
               <input type='text' name='yellowing' value={yellowing} onChange={handleChange} />
               <SampleButton
                 name={'yellowing'}
-                setformData={setFormData}
+                handleSample={handleSample}
               time={time}/>
           </div>
           <div/>

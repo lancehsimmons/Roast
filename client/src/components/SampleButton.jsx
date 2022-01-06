@@ -7,21 +7,12 @@
 
 import React from 'react'
 
-export default function SampleButton({name, time, setFormData}) {
-  const handleSample = (e) => {
-    e.preventDefault();
-    alert(name)
-    setFormData({name: time})
-    // const { name, time } = e.target
-    // setFormData((prevState) => ({
-    //   ...prevState,
-    //   [name]: time,
-    // }))
-  }
+export default function SampleButton({ name, handleSample }) {
+
 
   return (
     <div>
-      <button onClick={handleSample}>SAMPLE</button>
+      <button name={name} onClick={handleSample}>SAMPLE</button>
     </div>
   )
 }
