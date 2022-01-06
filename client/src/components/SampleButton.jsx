@@ -6,13 +6,13 @@
  */
 
 import React from 'react'
+import '../assets/samplebutton.css'
 
 export default function SampleButton({ name, handleSample }) {
 
-
   return (
     <div>
-      <button name={name} onClick={handleSample}>SAMPLE</button>
+      <button className='sample-button' name={name} onClick={handleSample}>SAMPLE</button>
     </div>
   )
 }

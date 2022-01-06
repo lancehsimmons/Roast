@@ -46,13 +46,11 @@ export default function AddRoast({ handleAddRoast }) {
 
   const handleSample = (e) => {
     e.preventDefault();
-    // setFormData({name: `${time}`})
     const { name } = e.target
-    console.log(name)
     setFormData((prevState) => ({
       ...prevState,
-      [name]: 
-      `${Math.floor((time / 60000) % 60)}:${Math.floor((time / 1000) % 60)}.${(time / 10) % 100}`,
+      [name]:
+        `${Math.floor((time / 60000) % 60)}:${Math.floor((time / 1000) % 60)}.${(time / 10) % 100}`,
     }))
   }
 
@@ -60,7 +58,7 @@ export default function AddRoast({ handleAddRoast }) {
     <div className='add-body'>
       <Stopwatch
         time={time}
-        setTime={setTime}/>
+        setTime={setTime} />
 
       <form
         onSubmit={(e) => {
@@ -88,10 +86,10 @@ export default function AddRoast({ handleAddRoast }) {
             </div>
 
             <div className='field-div cc'>
-                <label className='slable'>
-                  ROAST LEVEL
-                </label>
-                <input type='text' name='roast_level' value={roast_level} onChange={handleChange} />
+              <label className='slable'>
+                ROAST LEVEL
+              </label>
+              <input type='text' name='roast_level' value={roast_level} onChange={handleChange} />
             </div>
           </div>
 
@@ -110,61 +108,77 @@ export default function AddRoast({ handleAddRoast }) {
           </div>
 
           <div className='two-column'>
-          <div className='field-div cc'>
-            <label className='slable'>
-              YELLOWING
-            </label>
+            <div className='field-div cc'>
+              <label className='slable'>
+                YELLOWING
+              </label>
               <SampleButton
                 name={'yellowing'}
                 handleSample={handleSample}
               />
               <input type='text' name='yellowing' value={yellowing} onChange={handleChange} />
-          </div>
-          <div/>
+            </div>
+            <div />
 
-          <div className='field-div cc'>
-            <label className='slable'>
-              BROWNING
-            </label>
+            <div className='field-div cc'>
+              <label className='slable'>
+                BROWNING
+              </label>
               <SampleButton
                 name={'browning'}
                 handleSample={handleSample}
               />
               <input type='text' name='browning' value={browning} onChange={handleChange} />
             </div >
-            </div>
-
-          <div className='two-column'>
-          <div className='field-div cc'>
-            <label className='slable'>
-              FIRST CRACK
-            </label>
-            <input type='text' name='first_crack' value={first_crack} onChange={handleChange} />
           </div>
 
-          <div className='field-div cc'>
-            <label className='slable'>
-              SECOND CRACK
-            </label>
-            <input type='text' name='second_crack' value={second_crack} onChange={handleChange} />
-            </div>
+          <div className='two-column'>
+            <div className='field-div cc'>
+              <label className='slable'>
+                FIRST CRACK
+              </label>
+              <SampleButton
+                name={'first_crack'}
+                handleSample={handleSample}
+              />
+              <input type='text' name='first_crack' value={first_crack} onChange={handleChange} />
             </div>
 
-          <div className='two-column'>
-          <div className='field-div cc'>
-            <label className='slable'>
-              FIRST CRACK ENDS
-            </label>
-            <input type='text' name='first_crack_end' value={first_crack_end} onChange={handleChange} />
+            <div className='field-div cc'>
+              <label className='slable'>
+                SECOND CRACK
+              </label>
+              <SampleButton
+                name={'second_crack'}
+                handleSample={handleSample}
+              />
+              <input type='text' name='second_crack' value={second_crack} onChange={handleChange} />
+            </div>
           </div>
 
-          <div className='field-div cc'>
-            <label className='slable'>
-              END/DROP
-            </label>
-            <input type='text' name='end_drop' value={end_drop} onChange={handleChange} />
+          <div className='two-column'>
+            <div className='field-div cc'>
+              <label className='slable'>
+                FIRST CRACK ENDS
+              </label>
+              <SampleButton
+                name={'first_crack_end'}
+                handleSample={handleSample}
+              />
+              <input type='text' name='first_crack_end' value={first_crack_end} onChange={handleChange} />
             </div>
+
+            <div className='field-div cc'>
+              <label className='slable'>
+                END/DROP
+              </label>
+              <SampleButton
+                name={'end_drop'}
+                handleSample={handleSample}
+              />
+              <input type='text' name='end_drop' value={end_drop} onChange={handleChange} />
             </div>
+          </div>
 
           <div className='field-div'>
             <label className='slable'>
@@ -173,7 +187,7 @@ export default function AddRoast({ handleAddRoast }) {
             <textarea className='add-notes' type='text' name='notes' value={notes} onChange={handleChange} />
           </div>
         </div>
-        
+
       </form>
     </div>
   )
