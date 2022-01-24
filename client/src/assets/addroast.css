@@ -1,3 +1,10 @@
+.stopwatch-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .save-button {
   width: 200px;
   margin-bottom: 30px;

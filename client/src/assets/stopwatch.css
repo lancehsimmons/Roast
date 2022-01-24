@@ -1,12 +1,14 @@
 .stopwatch{
   margin-bottom: 25px;
+  width: 75vw;
 }
 
 .display {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   background-color: #FFE6CF;
+  border-radius: 4px;
+
 }
 
 .digit {

@@ -56,9 +56,11 @@ export default function AddRoast({ handleAddRoast }) {
 
   return (
     <div className='add-body'>
+      <div className='stopwatch-div'>
       <Stopwatch
         time={time}
         setTime={setTime} />
+      </div>
 
       <form
         onSubmit={(e) => {
